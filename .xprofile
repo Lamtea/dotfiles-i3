@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# default application settings.
-export BROWSER=firefox-developer-edition
-
 # qt5ct settings.
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
