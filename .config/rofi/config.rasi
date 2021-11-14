@@ -1,0 +1,44 @@
+configuration {
+	display-drun:         "DRun";
+	display-run:          "Run";
+	display-window:       "Window";
+	display-ssh:          "SSH";
+	display-filebrowser:  "File";
+	display-keys:         "Keys";
+	display-calc:         "Calc";
+	show-icons:           true;
+	sidebar-mode:         true;
+	modi:                 "calc,keys,filebrowser,ssh,window,run,drun";
+	font:                 "Noto Sans Mono CJK JP,Symbols Nerd Font,Monospace 12";
+	icon-theme:           "Papirus-Dark";
+}
+
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+window {
+	location:    south west;
+	anchor:      south west;
+	height:      95%;
+	width:       30%;
+	x-offset:    5px;
+	y-offset:    -30px;
+	orientation: horizontal;
+	children:    [mainbox];
+}
+
+scrollbar {
+    width:        4px;
+    border:       0;
+    handle-color: @normal-foreground;
+    handle-width: 8px;
+    padding:      0;
+}
+
+element {
+    padding:  4px;
+    children: [element-icon, element-text];
+}
+
+element-icon {
+    size: 3.0ch;
+}

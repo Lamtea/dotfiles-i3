@@ -1,0 +1,70 @@
+# デフォルトで全部無効
+/*
+/.**
+
+# gitignore
+!/.gitignore
+
+# インストールシェルスクリプト
+
+!/install.sh
+
+# vscode 開発環境
+!/.vscode/
+!/.vscode/**/*
+!/package.json
+!/package-lock.json
+
+# readme
+!/README.md
+
+# シェルスクリプト
+!/.bin/
+!/.bin/**/*
+!/bin/
+!/bin/**/*
+
+# ホームディレクトリ設定ファイル
+## x
+!/.xprofile
+!/.Xresources
+## xscreensaver
+!/.xscreensaver
+## icon
+!/.face
+
+# config設定ファイル
+!/.config/
+# compton
+!/.config/compton.conf
+## conky
+!/.config/conky/
+!/.config/conky/**/*
+## dunst
+!/.config/dunst/
+!/.config/dunst/**/*
+## fontconfig
+!/.config/fontconfig/
+!/.config/fontconfig/**/*
+## i3
+!/.config/i3/
+!/.config/i3/**/*
+## menutray
+!/.config/menutray/
+!/.config/menutray/**/*
+## mpd
+!/.config/mpd/
+!/.config/mpd/**/*
+## nitrogen
+!/.config/nitrogen/
+!/.config/nitrogen/**/*
+## polybar
+!/.config/polybar/
+!/.config/polybar/**/*
+## rofi
+!/.config/rofi/
+!/.config/rofi/**/*
+## systemd/user/timidity.service
+!/.config/systemd/
+!/.config/systemd/user/
+!/.config/systemd/user/timidity.service

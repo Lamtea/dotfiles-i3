@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# default application settings.
+export BROWSER=firefox-developer-edition
+
+# qt5ct settings.
+export QT_QPA_PLATFORMTHEME="qt5ct"
+
+# java theme settings.
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel ${_JAVA_OPTIONS}"
+
+# vulkan settings.
+export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/nvidia_icd.json
+
+# wine settings.
+export WINEARCH="win64"
+
+# Fcitx settings.
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export SDL_IM_MODULE=fcitx
+export DefaultIMModule=fcitx
+
+# device settings.
+if [ "${XDG_CURRENT_DESKTOP}" = "i3" ]; then
+  xset s off
+  xset dpms 1800 2400 3600
+  srandrd ~/.bin/detect_display.sh && ~/.bin/setup_wacom.sh
+  ~/.bin/detect_display.sh
+  ~/.bin/setup_wacom.sh
+  ~/.bin/setup_touchpad.sh off
+fi
