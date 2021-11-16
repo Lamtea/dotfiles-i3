@@ -228,8 +228,8 @@ bindsym $mod+Return exec $terminal_command
 bindsym --whole-window $mod+Button2 exec $terminal_command
 
 # kill focused window
-bindsym $mod+Shift+Return kill
-bindsym --whole-window $mod+Shift+Button2 kill
+bindsym $mod+Mod1+Return kill
+bindsym --whole-window $mod+Mod1+Button2 kill
 
 # start program launcher
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/launch.sh

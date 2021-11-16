@@ -222,36 +222,36 @@ My dotfiles for i3-gaps
 
 ### Window and workspace navigation
 
-| Key                   | Motion                                                                |
-| --------------------- | --------------------------------------------------------------------- |
-| Mod + Mouse           | Drag floating windows                                                 |
-| Mod + U               | Change border none                                                    |
-| Mod + Y               | Change border 1 pixel                                                 |
-| Mod + N               | Change border normal                                                  |
-| Mod + Shift + Enter   | Kill focused window                                                   |
-| Mod + Shift + Button2 | Kill focused window (Button2 is mouse middle button)                  |
-| Mod + HJKL            | Change focus                                                          |
-| Mod + Shift + HJKL    | Move focused window                                                   |
-| Mod + B               | Move workspace back and forth                                         |
-| Mod + Shift + B       | Move container to workspace back and forth                            |
-| Mod + Ctrl + H        | Change split orientation to horizontal                                |
-| Mod + Ctrl + V        | Change split orientation to Vertical                                  |
-| Mod + Q               | Toggle split orientation                                              |
-| Mod + F               | Toggle fullscreen mode                                                |
-| Mod + S               | Change container layout to stacked                                    |
-| Mod + W               | Change container layout to tabbed                                     |
-| Mod + E               | Toggle container layout                                               |
-| Mod + Shift + Space   | Toggle tiling/floating of focused window                              |
-| Mod + Space           | Change focus between tiling/floating windows                          |
-| Mod + Shift + S       | Toggle sticky of focused window                                       |
-| Mod + A               | Focus the parent container                                            |
-| Mod + Shift + Minus   | Move focused window to the scratchpad                                 |
-| Mod + Minus           | Show the next scratchpad window or hide the focused scratchpad window |
-| Mod + Shift + \[      | Switch to previous workspace                                          |
-| Mod + Shift + \]      | Switch to next workspace                                              |
-| Mod + 1〜8            | Switch to numbered workspace                                          |
-| Mod + Ctrl + 1〜8     | Move focused container to workspace                                   |
-| Mod + Shift + 1〜8    | Move to workspace with focused container                              |
+| Key                 | Motion                                                                |
+| ------------------- | --------------------------------------------------------------------- |
+| Mod + Mouse         | Drag floating windows                                                 |
+| Mod + U             | Change border none                                                    |
+| Mod + Y             | Change border 1 pixel                                                 |
+| Mod + N             | Change border normal                                                  |
+| Mod + Alt + Enter   | Kill focused window                                                   |
+| Mod + Alt + Button2 | Kill focused window (Button2 is mouse middle button)                  |
+| Mod + HJKL          | Change focus                                                          |
+| Mod + Shift + HJKL  | Move focused window                                                   |
+| Mod + B             | Move workspace back and forth                                         |
+| Mod + Shift + B     | Move container to workspace back and forth                            |
+| Mod + Ctrl + H      | Change split orientation to horizontal                                |
+| Mod + Ctrl + V      | Change split orientation to Vertical                                  |
+| Mod + Q             | Toggle split orientation                                              |
+| Mod + F             | Toggle fullscreen mode                                                |
+| Mod + S             | Change container layout to stacked                                    |
+| Mod + W             | Change container layout to tabbed                                     |
+| Mod + E             | Toggle container layout                                               |
+| Mod + Shift + Space | Toggle tiling/floating of focused window                              |
+| Mod + Space         | Change focus between tiling/floating windows                          |
+| Mod + Shift + S     | Toggle sticky of focused window                                       |
+| Mod + A             | Focus the parent container                                            |
+| Mod + Shift + Minus | Move focused window to the scratchpad                                 |
+| Mod + Minus         | Show the next scratchpad window or hide the focused scratchpad window |
+| Mod + Shift + \[    | Switch to previous workspace                                          |
+| Mod + Shift + \]    | Switch to next workspace                                              |
+| Mod + 1〜8          | Switch to numbered workspace                                          |
+| Mod + Ctrl + 1〜8   | Move focused container to workspace                                   |
+| Mod + Shift + 1〜8  | Move to workspace with focused container                              |
 
 ### Resize mode navigation
 
