@@ -71,10 +71,11 @@ exec --no-startup-id displaycal-apply-profiles
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id sleep 3; compton -b
-exec --no-startup-id sleep 6; conky -c ~/.config/conky/conky.conf
+exec --no-startup-id sleep 6; conky -c ~/.config/conky/archer-conky-right.conf
+exec --no-startup-id sleep 6; conky -c ~/.config/conky/archer-conky-left.conf
 exec --no-startup-id snap userd --autostart
 exec --no-startup-id numlockx on
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.bin/polybar_launch.sh
 exec --no-startup-id dockx
 exec --no-startup-id menutray -S ~/.config/menutray/schema.pl -C ~/.config/menutray/config.pl -o ~/.config/menutray/menu.pl
 exec --no-startup-id sleep 3; nm-applet
@@ -200,7 +201,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
-bindsym $mod+0 exec --no-startup-id ~/.config/rofi/power_menu.sh
+bindsym $mod+0 exec --no-startup-id ~/.bin/rofi_powermenu.sh
 
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
@@ -232,7 +233,7 @@ bindsym $mod+Mod1+Return kill
 bindsym --whole-window $mod+Mod1+Button2 kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id ~/.config/rofi/launch.sh
+bindsym $mod+d exec --no-startup-id ~/.bin/rofi_launch.sh
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id xfce4-appfinder

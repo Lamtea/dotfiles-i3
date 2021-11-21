@@ -29,9 +29,9 @@ font-4 = "Monospace:size=9"
 cursor-click = pointer
 tray-position = right
 tray-padding = 2
-modules-left = arch filemanager pkg i3 
+modules-left = arch filemanager pkg i3
 modules-center = backlight-acpi volume wired wifi cpu-value cpu-graph memory battery xkeyboard date powermenu
-modules-right = 
+modules-right =
 
 [bar/sub]
 monitor = HDMI-2
@@ -49,7 +49,7 @@ font-3 = "Monospace:size=9"
 cursor-click = pointer
 modules-left = arch filemanager google amazon github youtube i3 window
 modules-center = mpd
-modules-right = temperature-coretemp temperature-coretemp0 temperature-coretemp1 temperature-coretemp2 temperature-coretemp3 temperature-coretemp4 temperature-coretemp5 temperature-nvme hddtemp nvidiatemp temperature-iwlwifi temperature-acpitz temperature-cannonlake filesystem-boot filesystem-root filesystem-home
+modules-right = filesystem-boot filesystem-root filesystem-home
 
 ;===== Module Settings =====
 [module/arch]
@@ -58,7 +58,7 @@ content = 
 content-padding = 1
 content-foreground = ${colors.fg}
 content-underline = ${colors.adapta-cyan}
-click-left = ~/.config/rofi/launch.sh
+click-left = ~/.bin/rofi_launch.sh
 
 [module/filemanager]
 type = custom/text
@@ -102,8 +102,8 @@ click-left = xdg-open https://www.youtube.com/ &
 
 [module/pkg]
 type = custom/script
-interval = 7200
-exec = bash ~/.config/polybar/updates.sh
+interval = 3600
+exec = bash ~/.bin/arch_updates.sh
 click-left = /usr/bin/octopi &
 format-underline = ${colors.adapta-cyan}
 format-padding = 1
@@ -406,236 +406,8 @@ content = 襤
 content-padding = 1
 content-foreground = ${colors.fg}
 content-underline = ${colors.adapta-cyan}
-click-left = ~/.config/rofi/power_menu.sh
+click-left = ~/.bin/rofi_powermenu.sh
 content-margin = ${margin.for-modules}
-
-[module/temperature-coretemp]
-type = internal/temperature
-interval = 10
-thermal-zone = 2
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input
-base-temperature = 0
-warn-temperature = 90
-units = true
-format = <label>
-format-padding = 0
-format-warn = <label-warn>
-format-warn-padding = ${self.format-padding}
-label = "cpu: %temperature-c%"
-label-foreground = ${colors.fg}
-label-underline = ${colors.adapta-cyan}
-label-warn = "cpu: %temperature-c%"
-label-warn-foreground = ${colors.fg}
-label-warn-underline = ${colors.adapta-yellow}
-
-[module/temperature-coretemp0]
-type = internal/temperature
-interval = ${module/temperature-coretemp.interval}
-thermal-zone = ${module/temperature-coretemp.thermal-zone}
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp2_input
-base-temperature = ${module/temperature-coretemp.base-temperature}
-warn-temperature = ${module/temperature-coretemp.warn-temperature}
-units = false
-format = <label>
-format-padding = ${module/temperature-coretemp.format-padding}
-format-warn = <label-warn>
-format-warn-padding = ${self.format-padding}
-label = " (%temperature-c%, "
-label-foreground = ${colors.fg}
-label-underline = ${colors.adapta-cyan}
-label-warn = " (%temperature-c%, "
-label-warn-foreground = ${colors.fg}
-label-warn-underline = ${colors.adapta-yellow}
-
-[module/temperature-coretemp1]
-type = internal/temperature
-interval = ${module/temperature-coretemp0.interval}
-thermal-zone = ${module/temperature-coretemp0.thermal-zone}
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp3_input
-base-temperature = ${module/temperature-coretemp0.base-temperature}
-warn-temperature = ${module/temperature-coretemp0.warn-temperature}
-units = ${module/temperature-coretemp0.units}
-format = <label>
-format-padding = ${module/temperature-coretemp0.format-padding}
-format-warn = <label-warn>
-format-warn-padding = ${self.format-padding}
-label = "%temperature-c%, "
-label-foreground = ${colors.fg}
-label-underline = ${colors.adapta-cyan}
-label-warn = "%temperature-c%, "
-label-warn-foreground = ${colors.fg}
-label-warn-underline = ${colors.adapta-yellow}
-
-[module/temperature-coretemp2]
-type = internal/temperature
-interval = ${module/temperature-coretemp0.interval}
-thermal-zone = ${module/temperature-coretemp0.thermal-zone}
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp4_input
-base-temperature = ${module/temperature-coretemp0.base-temperature}
-warn-temperature = ${module/temperature-coretemp0.warn-temperature}
-units = ${module/temperature-coretemp0.units}
-format = <label>
-format-padding = ${module/temperature-coretemp0.format-padding}
-format-warn = <label-warn>
-format-warn-padding = ${self.format-padding}
-label = "%temperature-c%, "
-label-foreground = ${colors.fg}
-label-underline = ${colors.adapta-cyan}
-label-warn = "%temperature-c%, "
-label-warn-foreground = ${colors.fg}
-label-warn-underline = ${colors.adapta-yellow}
-
-[module/temperature-coretemp3]
-type = internal/temperature
-interval = ${module/temperature-coretemp0.interval}
-thermal-zone = ${module/temperature-coretemp0.thermal-zone}
-hwmon-path = //sys/devices/platform/coretemp.0/hwmon/hwmon5/temp5_input
-base-temperature = ${module/temperature-coretemp0.base-temperature}
-warn-temperature = ${module/temperature-coretemp0.warn-temperature}
-units = ${module/temperature-coretemp0.units}
-format = <label>
-format-padding = ${module/temperature-coretemp0.format-padding}
-format-warn = <label-warn>
-format-warn-padding = ${self.format-padding}
-label = "%temperature-c%, "
-label-foreground = ${colors.fg}
-label-underline = ${colors.adapta-cyan}
-label-warn = "%temperature-c%, "
-label-warn-foreground = ${colors.fg}
-label-warn-underline = ${colors.adapta-yellow}
-
-[module/temperature-coretemp4]
-type = internal/temperature
-interval = ${module/temperature-coretemp0.interval}
-thermal-zone = ${module/temperature-coretemp0.thermal-zone}
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp6_input
-base-temperature = ${module/temperature-coretemp0.base-temperature}
-warn-temperature = ${module/temperature-coretemp0.warn-temperature}
-units = ${module/temperature-coretemp0.units}
-format = <label>
-format-padding = ${module/temperature-coretemp0.format-padding}
-format-warn = <label-warn>
-format-warn-padding = ${self.format-padding}
-label = "%temperature-c%, "
-label-foreground = ${colors.fg}
-label-underline = ${colors.adapta-cyan}
-label-warn = "%temperature-c%, "
-label-warn-foreground = ${colors.fg}
-label-warn-underline = ${colors.adapta-yellow}
-
-[module/temperature-coretemp5]
-type = internal/temperature
-interval = ${module/temperature-coretemp0.interval}
-thermal-zone = ${module/temperature-coretemp0.thermal-zone}
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp7_input
-base-temperature = ${module/temperature-coretemp0.base-temperature}
-warn-temperature = ${module/temperature-coretemp0.warn-temperature}
-units = ${module/temperature-coretemp0.units}
-format = <label>
-format-padding = ${module/temperature-coretemp0.format-padding}
-format-warn = <label-warn>
-format-warn-padding = ${self.format-padding}
-label = "%temperature-c%)"
-label-foreground = ${colors.fg}
-label-underline = ${colors.adapta-cyan}
-label-warn = "%temperature-c%)"
-label-warn-foreground = ${colors.fg}
-label-warn-underline = ${colors.adapta-yellow}
-
-[module/temperature-nvme]
-type = internal/temperature
-interval = 10
-thermal-zone = 0
-hwmon-path = /sys/devices/pci0000:00/0000:00:1d.0/0000:02:00.0/nvme/nvme0/hwmon2/temp1_input
-base-temperature = 0
-warn-temperature = 60
-units = true
-format = <label>
-format-padding = 0
-format-warn = <label-warn>
-format-warn-padding = ${self.format-padding}
-label = "ssd: %temperature-c%"
-label-foreground = ${colors.fg}
-label-underline = ${colors.adapta-cyan}
-label-warn = "ssd: %temperature-c%"
-label-warn-foreground = ${colors.fg}
-label-warn-underline = ${colors.adapta-yellow}
-format-margin = ${margin.for-modules}
-format-warn-margin = ${margin.for-modules}
-
-[module/hddtemp]
-type = custom/script
-exec = ~/.config/polybar/hddtemp.sh
-format-underline = ${colors.adapta-lightgreen}
-format-padding = 1
-interval = 10
-
-[module/nvidiatemp]
-type = custom/script
-exec = ~/.config/polybar/nvidiatemp.sh
-format-underline = ${colors.adapta-lightgreen}
-format-padding = 1
-format-margin = ${margin.for-modules}
-interval = 10
-
-[module/temperature-iwlwifi]
-type = internal/temperature
-interval = 10
-thermal-zone = 3
-hwmon-path = /sys/devices/virtual/thermal/thermal_zone3/hwmon6/temp1_input
-base-temperature = 0
-warn-temperature = 80
-units = true
-format = <label>
-format-padding = 0
-format-warn = <label-warn>
-format-warn-padding = ${self.format-padding}
-label = "wifi: %temperature-c%"
-label-foreground = ${colors.fg}
-label-underline = ${colors.adapta-cyan}
-label-warn = "wifi: %temperature-c%"
-label-warn-foreground = ${colors.fg}
-label-warn-underline = ${colors.adapta-yellow}
-
-[module/temperature-acpitz]
-type = internal/temperature
-interval = 10
-thermal-zone = 0
-hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
-base-temperature = 0
-warn-temperature = 80
-units = true
-format = <label>
-format-padding = 0
-format-warn = <label-warn>
-format-warn-padding = ${self.format-padding}
-label = "acpi: %temperature-c%"
-label-foreground = ${colors.fg}
-label-underline = ${colors.adapta-cyan}
-label-warn = "acpi: %temperature-c%"
-label-warn-foreground = ${colors.fg}
-label-warn-underline = ${colors.adapta-yellow}
-format-margin = ${margin.for-modules}
-format-warn-margin = ${margin.for-modules}
-
-[module/temperature-cannonlake]
-type = internal/temperature
-interval = 10
-thermal-zone = 1
-hwmon-path = /sys/devices/virtual/thermal/thermal_zone1/hwmon4/temp1_input
-base-temperature = 0
-warn-temperature = 80
-units = true
-format = <label>
-format-padding = 0
-format-warn = <label-warn>
-format-warn-padding = ${self.format-padding}
-label = "pch: %temperature-c%"
-label-foreground = ${colors.fg}
-label-underline = ${colors.adapta-cyan}
-label-warn = "pch: %temperature-c%"
-label-warn-foreground = ${colors.fg}
-label-warn-underline = ${colors.adapta-yellow}
 
 [module/filesystem-boot]
 type = internal/fs

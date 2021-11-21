@@ -65,6 +65,12 @@ create_dotfile_links() {
     .config/polybar
     .config/rofi
     .config/systemd/user/timidity.service
+    .bin/arch_updates.sh
+    .bin/polybar_launch.sh
+    .bin/rofi_launch.sh
+    .bin/rofi_powermenu.sh
+    .bin/hddtemp.sh
+    .bin/nvidiatemp.sh
     .bin/detect_display.sh
     .bin/setup_touchpad.sh
     .bin/setup_wacom.sh

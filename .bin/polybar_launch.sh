@@ -21,4 +21,3 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 [[ $(xrandr --listactivemonitors | grep ${DISPLAY_SUB}) ]] && polybar sub &
 
 echo "Polybar launched..."
-
