@@ -71,8 +71,8 @@ exec --no-startup-id displaycal-apply-profiles
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id sleep 3; compton -b
-exec --no-startup-id sleep 6; conky -c ~/.config/conky/archer-conky-right.conf
-exec --no-startup-id sleep 6; conky -c ~/.config/conky/archer-conky-left.conf
+exec --no-startup-id sleep 12; conky -c ~/.config/conky/archer-conky-right.conf
+exec --no-startup-id sleep 12; conky -c ~/.config/conky/archer-conky-left.conf
 exec --no-startup-id snap userd --autostart
 exec --no-startup-id numlockx on
 exec_always --no-startup-id ~/.bin/polybar_launch.sh
