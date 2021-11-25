@@ -47,7 +47,7 @@ Xcursor.theme: FlatbedCursors-Black
 Xcursor.size:  0
 
 ! urxvt
-URxvt.font: xft:Ricty:size=13,xft:MesloLGS Nerd Font:size=13,xft:Monospace:size=13
+URxvt.font:                 xft:Ricty:size=13,xft:MesloLGS Nerd Font Mono:size=13,xft:Monospace:size=13
 URxvt.depth:                32
 URxvt.background:           [90]#080a16
 URxvt*scrollBar:            false
