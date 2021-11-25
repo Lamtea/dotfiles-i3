@@ -15,10 +15,10 @@ My dotfiles for i3-gaps
   - noto-fonts-extra
   - ricty
   - hackgen
+  - meslo-nerd-font-powerlevel10k
   - nerd-fonts-complete
     - noto
     - hack
-    - meslo
     - fantasque
   - fantasque-sans-mono
   - monapo
