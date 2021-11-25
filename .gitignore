@@ -37,6 +37,9 @@
 !/.config/
 # compton
 !/.config/compton.conf
+## alacritty
+!/.config/alacritty/
+!/.config/alacritty/**/*
 ## conky
 !/.config/conky/
 !/.config/conky/**/*

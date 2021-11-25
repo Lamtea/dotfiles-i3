@@ -55,6 +55,7 @@ create_dotfile_links() {
     .xscreensaver
     .face
     .config/compton.conf
+    .config/alacritty
     .config/conky
     .config/dunst
     .config/fontconfig

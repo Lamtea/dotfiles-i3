@@ -9,37 +9,21 @@ My dotfiles for i3-gaps
   - srandrd
   - numlockx
 - Font
-  - Noto
-    - noto-fonts
-    - noto-fonts-cjk
-    - noto-fonts-emoji
-    - noto-fonts-extra
-  - IPA
-    - ipafont
-    - ipamjfont
-    - ipaexfont
-  - Adobe
-    - adobe-source-han-sans-jp-fonts
-    - adobe-source-han-serif-jp-fonts
-    - adobe-source-code-pro-fonts
-  - Programming
-    - ricty
-  - Symbol
-    - nerd-font-symbols
-  - Powerlevel10k
-    - meslo-nerd-font-powerlevel10k
-  - Other
-    - fantasque-sans-mono
-    - monapo
-    - mikachan
-    - steam-fonts
-    - liberation
-    - font-awesome
-    - droid
-    - dejavu
-    - terminus-font
-    - powerline-fonts
-    - awesome-terminal-fonts
+  - noto-fonts
+  - noto-fonts-cjk
+  - noto-fonts-emoji
+  - noto-fonts-extra
+  - ricty
+  - hackgen
+  - nerd-fonts-complete
+    - noto
+    - hack
+    - meslo
+    - fantasque
+  - fantasque-sans-mono
+  - monapo
+  - steam-fonts
+  - liberation
 - Login manager
   - lightdm
     - lightdm-webkit2-greeter

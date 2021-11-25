@@ -9,7 +9,7 @@ configuration {
 	show-icons:           true;
 	sidebar-mode:         true;
 	modi:                 "calc,keys,filebrowser,ssh,window,run,drun";
-	font:                 "Noto Sans Mono CJK JP,Symbols Nerd Font,Monospace 12";
+	font:                 "Noto Sans Mono CJK JP,NotoSansMono Nerd Font,Monospace 12";
 	icon-theme:           "Papirus-Dark";
 }
 
