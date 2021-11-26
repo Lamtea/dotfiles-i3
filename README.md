@@ -202,7 +202,7 @@ My dotfiles for i3-gaps
   - On
 - Fonts
   - Noto Sans CJK JP
-  - Symbols Nerd Font
+  - NotoSans Nerd Font
 
 ### Window and workspace navigation
 
@@ -213,7 +213,7 @@ My dotfiles for i3-gaps
 | Mod + Y             | Change border 1 pixel                                                 |
 | Mod + N             | Change border normal                                                  |
 | Mod + Alt + Enter   | Kill focused window                                                   |
-| Mod + Alt + Button2 | Kill focused window (Button2 is mouse middle button)                  |
+| Mod + Alt + Button3 | Kill focused window (Button3 is mouse right button)                   |
 | Mod + HJKL          | Change focus                                                          |
 | Mod + Shift + HJKL  | Move focused window                                                   |
 | Mod + B             | Move workspace back and forth                                         |
@@ -293,43 +293,43 @@ My dotfiles for i3-gaps
 
 ### Application shortcuts
 
-| Key               | Motion                                 |
-| ----------------- | -------------------------------------- |
-| Mod + Enter       | urxvt                                  |
-| Mod + Button2     | urxvt (Button2 is mouse middle button) |
-| Mod + F1          | thunar                                 |
-| Mod + Shift + F1  | catfish                                |
-| Mod + Ctrl + F1   | ranger                                 |
-| Mod + F2          | firefox-developer-edition              |
-| Mod + Shift + F2  | google-chrome-stable                   |
-| Mod + Ctrl + F2   | w3m                                    |
-| Mod + F3          | thunderbird                            |
-| Mod + Ctrl + F3   | neomutt                                |
-| Mod + F4          | cantata                                |
-| Mod + Shift + F4  | spotify                                |
-| Mod + Ctrl + F4   | ncmpcpp                                |
-| Mod + F5          | discord                                |
-| Mod + Shift + F5  | twinux                                 |
-| Mod + F6          | jdim                                   |
-| Mod + Ctrl + F6   | transmission                           |
-| Mod + F7          | lutris                                 |
-| Mod + Shift + F7  | steam                                  |
-| Mod + F8          | speedcrunch                            |
-| Mod + Shift + F8  | alacritty                              |
-| Mod + F9          | calibre                                |
-| Mod + Shift + F9  | mcomix                                 |
-| Mod + F10         | geeqie                                 |
-| Mod + Shift + F10 | xsane                                  |
-| Mod + F11         | smplayer                               |
-| Mod + Shift + F11 | peek                                   |
-| Mod + F12         | libreoffice-calc                       |
-| Mod + Shift + F12 | libreoffice-writer                     |
-| Mod + Alt + V     | visual-studio-code                     |
-| Mod + Alt + A     | android-studio                         |
-| Mod + Alt + D     | dbeaver                                |
-| Mod + Alt + M     | meld                                   |
-| Mod + Alt + W     | wireshark                              |
-| Mod + Alt + K     | krita                                  |
-| Mod + Alt + G     | gimp                                   |
-| Mod + Alt + I     | inkscape                               |
-| Mod + Alt + B     | blender                                |
+| Key               | Motion                                |
+| ----------------- | ------------------------------------- |
+| Mod + Enter       | urxvt                                 |
+| Mod + Button3     | urxvt (Button3 is mouse right button) |
+| Mod + F1          | thunar                                |
+| Mod + Shift + F1  | catfish                               |
+| Mod + Ctrl + F1   | ranger                                |
+| Mod + F2          | firefox-developer-edition             |
+| Mod + Shift + F2  | google-chrome-stable                  |
+| Mod + Ctrl + F2   | w3m                                   |
+| Mod + F3          | thunderbird                           |
+| Mod + Ctrl + F3   | neomutt                               |
+| Mod + F4          | cantata                               |
+| Mod + Shift + F4  | spotify                               |
+| Mod + Ctrl + F4   | ncmpcpp                               |
+| Mod + F5          | discord                               |
+| Mod + Shift + F5  | twinux                                |
+| Mod + F6          | jdim                                  |
+| Mod + Ctrl + F6   | transmission                          |
+| Mod + F7          | lutris                                |
+| Mod + Shift + F7  | steam                                 |
+| Mod + F8          | speedcrunch                           |
+| Mod + Shift + F8  | alacritty                             |
+| Mod + F9          | calibre                               |
+| Mod + Shift + F9  | mcomix                                |
+| Mod + F10         | geeqie                                |
+| Mod + Shift + F10 | xsane                                 |
+| Mod + F11         | smplayer                              |
+| Mod + Shift + F11 | peek                                  |
+| Mod + F12         | libreoffice-calc                      |
+| Mod + Shift + F12 | libreoffice-writer                    |
+| Mod + Alt + V     | visual-studio-code                    |
+| Mod + Alt + A     | android-studio                        |
+| Mod + Alt + D     | dbeaver                               |
+| Mod + Alt + M     | meld                                  |
+| Mod + Alt + W     | wireshark                             |
+| Mod + Alt + K     | krita                                 |
+| Mod + Alt + G     | gimp                                  |
+| Mod + Alt + I     | inkscape                              |
+| Mod + Alt + B     | blender                               |

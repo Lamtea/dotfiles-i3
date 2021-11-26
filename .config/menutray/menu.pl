@@ -112,7 +112,7 @@ sub load_menu {
 {
     my $item = 'Gtk3::ImageMenuItem'->new("_Run\ command");
     $item->set_image('Gtk3::Image'->new_from_icon_name("system\-run",q{menu}));
-    $item->signal_connect('activate', sub {system "\.config\/rofi\/launch\.sh &"});
+    $item->signal_connect('activate', sub {system "\.bin\/rofi_launch\.sh &"});
     $menu->append($item);
 }
 

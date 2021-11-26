@@ -24,8 +24,8 @@ our $SCHEMA = [
     #          COMMAND                       LABEL           ICON
     {item => ['xdg-open .',                 'File Manager', 'system-file-manager']},
     {item => ['urxvtc',                     'Terminal',     'utilities-terminal']},
-    {item => ['xdg-open http://', 'Web Browser',  'web-browser']},
-    {item => ['.config/rofi/launch.sh',     'Run command',  'system-run']},
+    {item => ['xdg-open http://',           'Web Browser',  'web-browser']},
+    {item => ['.bin/rofi_launch.sh',        'Run command',  'system-run']},
 
     {sep => undef},
 
