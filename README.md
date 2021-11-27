@@ -8,6 +8,8 @@ Run this command: `install.sh`
 
 ## On depends
 
+- dotfiles
+  - My dotfiles for command line interface on Arch linux
 - X
   - xorg-apps
   - srandrd
@@ -41,7 +43,7 @@ Run this command: `install.sh`
   - menutray
   - rofi
   - xfce4-appfinder
-  - bmenu
+  - bemenu (from dotfiles)
 - Compositor
   - picom/compton
 - Background
@@ -73,8 +75,8 @@ Run this command: `install.sh`
   - Polkit gnome
     - polkit-gnome-authentication-agent-1
 - Keyring
-  - gnome-keyring
-  - libgnome-keyring
+  - gnome-keyring (from dotfiles)
+  - libgnome-keyring (from dotfiles)
   - seahorse
 - Network manager
   - Network manager
@@ -116,16 +118,16 @@ Run this command: `install.sh`
     - catfish
   - ranger
 - Editor
-  - Neovim
+  - Neovim (from dotfiles)
     - nvim
   - mousepad
 - Browser
-  - w3m
+  - w3m (from dotfiles)
   - firefox-developer-edition
   - google-chrome-stable
 - Mail
   - postfix
-  - neomutt
+  - neomutt (from dotfiles)
   - thunderbird
   - birdtray
 - Music player
@@ -149,7 +151,7 @@ Run this command: `install.sh`
   - ufw
   - gufw
 - Cloud
-  - rclone
+  - rclone (from dotfiles)
 - Systemtray application
   - udiskie
   - remmina
@@ -277,7 +279,7 @@ Run this command: `install.sh`
 | -------------- | --------------- |
 | Mod + D        | rofi            |
 | Mod + Z        | xfce4-appfinder |
-| Mod + Ctrl + B | bmenu           |
+| Mod + Ctrl + B | bemenu          |
 
 ### System shortcuts
 
@@ -343,10 +345,26 @@ Run this command: `install.sh`
 | Mod + Alt + I     | inkscape                              |
 | Mod + Alt + B     | blender                               |
 
+## Shell scripts
+
+| Name               | Description                   |
+| ------------------ | ----------------------------- |
+| arch_updates.sh    | check package updates.        |
+| detect_display.sh  | set xrandr.                   |
+| hddtemp.sh         | get hddtemp.                  |
+| nvidiatemp.sh      | get nvidia card temperature.  |
+| polybar_launch.sh  | start polybar.                |
+| rofi_launch.sh     | start rofi.                   |
+| rofi_powermenu.sh  | start rofi power menu.        |
+| setup_touchpad.sh  | disable touch pad.            |
+| setup_wacom.sh     | enable wacom pen tablet.      |
+| open_with_linux.py | script for firefox extension. |
+
 ## Development
 
 - bash
 - bashdb
+- python
 - git
 - nodejs
   - bash-language-server
