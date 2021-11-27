@@ -67,39 +67,40 @@ set $locker_command light-locker-command -l
 exec --no-startup-id aa-notify -p -s 1 -w 60 -f /var/log/audit/audit.log
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
-exec --no-startup-id displaycal-apply-profiles
-exec --no-startup-id start-pulseaudio-x11
-exec --no-startup-id nitrogen --restore
-exec --no-startup-id sleep 3; compton -b
-exec --no-startup-id sleep 12; conky -c ~/.config/conky/archer-conky-right.conf
-exec --no-startup-id sleep 12; conky -c ~/.config/conky/archer-conky-left.conf
 exec --no-startup-id snap userd --autostart
+exec --no-startup-id start-pulseaudio-x11
+exec --no-startup-id displaycal-apply-profiles
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id compton -b
 exec --no-startup-id numlockx on
 exec_always --no-startup-id ~/.bin/polybar_launch.sh
 exec --no-startup-id dockx
 exec --no-startup-id menutray
+exec --no-startup-id ~/.bin/rclone_mount.sh
+exec --no-startup-id urxvtd -o -f
 exec --no-startup-id sleep 3; nm-applet
 exec --no-startup-id sleep 3; blueman-applet
 exec --no-startup-id sleep 3; volumeicon
 exec --no-startup-id sleep 3; clipit
 exec --no-startup-id sleep 3; fcitx5
-exec --no-startup-id sleep 9; redshift-gtk
+exec --no-startup-id sleep 3; udiskie -Nt
+exec --no-startup-id sleep 6; thunar --daemon
+exec --no-startup-id sleep 15; conky -c ~/.config/conky/archer-conky-right.conf
+exec --no-startup-id sleep 15; conky -c ~/.config/conky/archer-conky-left.conf
 
 # Autostart applications
-exec --no-startup-id urxvtd -o -f
-exec --no-startup-id thunar --daemon
-exec --no-startup-id ~/.bin/rclone_mount.sh
 exec --no-startup-id sleep 6; xpad
 exec --no-startup-id sleep 6; flameshot
-exec --no-startup-id sleep 6; cantata
-exec --no-startup-id sleep 6; joplin-desktop
-exec --no-startup-id sleep 6; remmina -i
-exec --no-startup-id sleep 6; slack --startup
-exec --no-startup-id sleep 6; osmo
-exec --no-startup-id sleep 6; my-weather-indicator
 exec --no-startup-id sleep 6; veracrypt --background-task
 exec --no-startup-id sleep 6; birdtray
+exec --no-startup-id sleep 6; cantata
+exec --no-startup-id sleep 6; remmina -i
 exec --no-startup-id sleep 6; uget-gtk
+exec --no-startup-id sleep 9; redshift-gtk
+exec --no-startup-id sleep 9; osmo
+exec --no-startup-id sleep 9; my-weather-indicator
+exec --no-startup-id sleep 12; joplin-desktop
+exec --no-startup-id sleep 12; slack --startup
 
 ################################################################################################
 ## Bindsym settings.

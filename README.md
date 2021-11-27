@@ -1,8 +1,12 @@
 # dotfiles-i3
 
-My dotfiles for i3-gaps
+My dotfiles for i3-gaps on Arch linux.
 
-## Desktop settings
+## How to install
+
+Run this command: `install.sh`
+
+## On depends
 
 - X
   - xorg-apps
@@ -59,6 +63,7 @@ My dotfiles for i3-gaps
 - System monitor
   - conky-lua-nv
 - Package manager
+  - paru
   - octopi
   - snap
 - Linux security module
@@ -69,6 +74,8 @@ My dotfiles for i3-gaps
     - polkit-gnome-authentication-agent-1
 - Keyring
   - gnome-keyring
+  - libgnome-keyring
+  - seahorse
 - Network manager
   - Network manager
     - nm-applet
@@ -111,6 +118,7 @@ My dotfiles for i3-gaps
 - Editor
   - Neovim
     - nvim
+  - mousepad
 - Browser
   - w3m
   - firefox-developer-edition
@@ -143,6 +151,7 @@ My dotfiles for i3-gaps
 - Cloud
   - rclone
 - Systemtray application
+  - udiskie
   - remmina
   - osmo
   - my-weather-indicator
@@ -333,3 +342,12 @@ My dotfiles for i3-gaps
 | Mod + Alt + G     | gimp                                  |
 | Mod + Alt + I     | inkscape                              |
 | Mod + Alt + B     | blender                               |
+
+## Development
+
+- bash
+- bashdb
+- git
+- nodejs
+  - bash-language-server
+- vscode
