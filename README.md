@@ -347,19 +347,19 @@ Run this command: `install.sh`
 
 ## Shell scripts
 
-| Name               | Description                   |
-| ------------------ | ----------------------------- |
-| arch_updates.sh    | check package updates.        |
-| detect_display.sh  | set xrandr.                   |
-| hddtemp.sh         | get hddtemp.                  |
-| nvidiatemp.sh      | get nvidia card temperature.  |
-| polybar_launch.sh  | start polybar.                |
-| rofi_launch.sh     | start rofi.                   |
-| rofi_powermenu.sh  | start rofi power menu.        |
-| setup_touchpad.sh  | disable touch pad.            |
-| setup_wacom.sh     | enable wacom pen tablet.      |
-| open_with_linux.py | script for firefox extension. |
-| get_windowclass_i3.sh | get windows class name for i3. |
+| Name                  | Description                   |
+| --------------------- | ----------------------------- |
+| arch_updates.sh       | check package updates.        |
+| detect_display.sh     | set xrandr.                   |
+| hddtemp.sh            | get hddtemp.                  |
+| nvidiatemp.sh         | get nvidia card temperature.  |
+| polybar_launch.sh     | start polybar.                |
+| rofi_launch.sh        | start rofi.                   |
+| rofi_powermenu.sh     | start rofi power menu.        |
+| setup_touchpad.sh     | disable touch pad.            |
+| setup_wacom.sh        | enable wacom pen tablet.      |
+| open_with_linux.py    | script for firefox extension. |
+| get_windowclass_i3.sh | get window class name for i3. |
 
 ## Development
 
