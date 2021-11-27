@@ -359,6 +359,7 @@ Run this command: `install.sh`
 | setup_touchpad.sh  | disable touch pad.            |
 | setup_wacom.sh     | enable wacom pen tablet.      |
 | open_with_linux.py | script for firefox extension. |
+| get_windowclass_i3.sh | get windows class name for i3. |
 
 ## Development
 
