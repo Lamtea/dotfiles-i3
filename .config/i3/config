@@ -75,7 +75,6 @@ exec --no-startup-id compton -b
 exec --no-startup-id numlockx on
 exec_always --no-startup-id ~/.bin/polybar_launch.sh
 exec --no-startup-id dockx
-exec --no-startup-id menutray
 exec --no-startup-id ~/.bin/rclone_mount.sh
 exec --no-startup-id urxvtd -o -f
 exec --no-startup-id sleep 3; nm-applet
@@ -247,7 +246,6 @@ bindsym XF86MoBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 # Start Applications
-bindsym $mod+Ctrl+b exec $terminal_command -e 'bemenu-run'
 bindsym $mod+Ctrl+w exec gufw
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+t exec --no-startup-id pkill compton

@@ -40,10 +40,8 @@ Run this command: `install.sh`
   - polybar
 - Menu
   - dockx
-  - menutray
   - rofi
   - xfce4-appfinder
-  - bemenu (from dotfiles)
 - Compositor
   - picom/compton
 - Background
@@ -275,11 +273,10 @@ Run this command: `install.sh`
 
 ### Menu shortcuts
 
-| Key            | Motion          |
-| -------------- | --------------- |
-| Mod + D        | rofi            |
-| Mod + Z        | xfce4-appfinder |
-| Mod + Ctrl + B | bemenu          |
+| Key     | Motion          |
+| ------- | --------------- |
+| Mod + D | rofi            |
+| Mod + Z | xfce4-appfinder |
 
 ### System shortcuts
 

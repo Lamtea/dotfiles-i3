@@ -52,9 +52,6 @@
 ## i3
 !/.config/i3/
 !/.config/i3/**/*
-## menutray
-!/.config/menutray/
-!/.config/menutray/**/*
 ## mpd
 !/.config/mpd/
 !/.config/mpd/**/*
