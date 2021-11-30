@@ -105,7 +105,7 @@ sub load_menu {
 {
     my $item = 'Gtk3::ImageMenuItem'->new("_Web\ Browser");
     $item->set_image('Gtk3::Image'->new_from_icon_name("web\-browser",q{menu}));
-    $item->signal_connect('activate', sub {system "xdg\-open\ http\:\/\/ &"});
+    $item->signal_connect('activate', sub {system "prime\-run\ xdg\-open\ http\:\/\/ &"});
     $menu->append($item);
 }
 
@@ -192,13 +192,6 @@ sub load_menu {
     $app->signal_connect('activate', sub {system "\/usr\/bin\/fcitx5 &"});
     $app->set_property('tooltip_text', "Start\ Input\ Method");
     $app->set_image('Gtk3::Image'->new_from_icon_name("fcitx",q{menu}));
-    $menu1->append($app);
-}
-{
-    my $app = 'Gtk3::ImageMenuItem'->new("_Files");
-    $app->signal_connect('activate', sub {system "nautilus\ \-\-new\-window &"});
-    $app->set_property('tooltip_text', "Access\ and\ organize\ files");
-    $app->set_image('Gtk3::Image'->new_from_icon_name("org\.gnome\.Nautilus",q{menu}));
     $menu1->append($app);
 }
 {
@@ -511,7 +504,7 @@ sub load_menu {
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_Blender");
-    $app->signal_connect('activate', sub {system "blender &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ blender &"});
     $app->set_property('tooltip_text', "3Dモデリング\、アニメーション\、レンダリング\、ポストプロダクションのツール");
     $app->set_image('Gtk3::Image'->new_from_icon_name("blender",q{menu}));
     $menu1->append($app);
@@ -553,7 +546,7 @@ sub load_menu {
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_GNU\ Image\ Manipulation\ Program");
-    $app->signal_connect('activate', sub {system "gimp\-2\.10 &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ gimp\-2\.10 &"});
     $app->set_property('tooltip_text', "Create\ images\ and\ edit\ photographs");
     $app->set_image('Gtk3::Image'->new_from_icon_name("gimp",q{menu}));
     $menu1->append($app);
@@ -567,14 +560,14 @@ sub load_menu {
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_Inkscape");
-    $app->signal_connect('activate', sub {system "inkscape &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ inkscape &"});
     $app->set_property('tooltip_text', "Create\ and\ edit\ Scalable\ Vector\ Graphics\ images");
     $app->set_image('Gtk3::Image'->new_from_icon_name("org\.inkscape\.Inkscape",q{menu}));
     $menu1->append($app);
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_Krita");
-    $app->signal_connect('activate', sub {system "krita &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ krita &"});
     $app->set_property('tooltip_text', "Digital\ Painting");
     $app->set_image('Gtk3::Image'->new_from_icon_name("krita",q{menu}));
     $menu1->append($app);
@@ -602,7 +595,7 @@ sub load_menu {
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_Peek");
-    $app->signal_connect('activate', sub {system "peek &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ peek &"});
     $app->set_property('tooltip_text', "Record\ short\ animated\ GIF\ images\ from\ your\ screen");
     $app->set_image('Gtk3::Image'->new_from_icon_name("com\.uploadedlobster\.peek",q{menu}));
     $menu1->append($app);
@@ -680,14 +673,14 @@ sub load_menu {
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_HandBrake");
-    $app->signal_connect('activate', sub {system "ghb &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ ghb &"});
     $app->set_property('tooltip_text', "Transcodes\ DVD\,\ Bluray\,\ and\ other\ media");
     $app->set_image('Gtk3::Image'->new_from_icon_name("fr\.handbrake\.ghb",q{menu}));
     $menu1->append($app);
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_mpv\ Media\ Player");
-    $app->signal_connect('activate', sub {system "mpv\ \-\-player\-operation\-mode\=pseudo\-gui\ \-\- &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ mpv\ \-\-player\-operation\-mode\=pseudo\-gui\ \-\- &"});
     $app->set_property('tooltip_text', "Play\ movies\ and\ songs");
     $app->set_image('Gtk3::Image'->new_from_icon_name("mpv",q{menu}));
     $menu1->append($app);
@@ -701,14 +694,14 @@ sub load_menu {
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_Parole\ Media\ Player");
-    $app->signal_connect('activate', sub {system "parole &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ parole &"});
     $app->set_property('tooltip_text', "Play\ your\ media");
     $app->set_image('Gtk3::Image'->new_from_icon_name("org\.xfce\.parole",q{menu}));
     $menu1->append($app);
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_Peek");
-    $app->signal_connect('activate', sub {system "peek &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ peek &"});
     $app->set_property('tooltip_text', "Record\ short\ animated\ GIF\ images\ from\ your\ screen");
     $app->set_image('Gtk3::Image'->new_from_icon_name("com\.uploadedlobster\.peek",q{menu}));
     $menu1->append($app);
@@ -736,7 +729,7 @@ sub load_menu {
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_SMPlayer");
-    $app->signal_connect('activate', sub {system "smplayer &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ smplayer &"});
     $app->set_property('tooltip_text', "高性能\ MPlayer\ フロントエンド");
     $app->set_image('Gtk3::Image'->new_from_icon_name("smplayer",q{menu}));
     $menu1->append($app);
@@ -749,7 +742,7 @@ sub load_menu {
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_VLCメディアプレイヤー");
-    $app->signal_connect('activate', sub {system "\/usr\/bin\/vlc\ \-\-started\-from\-file &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ \/usr\/bin\/vlc\ \-\-started\-from\-file &"});
     $app->set_property('tooltip_text', "マルチメディアストリームの読み込み\、キャプチャー\、ブロードキャスト");
     $app->set_image('Gtk3::Image'->new_from_icon_name("vlc",q{menu}));
     $menu1->append($app);
@@ -813,14 +806,14 @@ sub load_menu {
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_Firefox\ Developer\ Edition");
-    $app->signal_connect('activate', sub {system "\/usr\/lib\/firefox\-developer\-edition\/firefox &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ \/usr\/lib\/firefox\-developer\-edition\/firefox &"});
     $app->set_property('tooltip_text', "ウェブを閲覧します");
     $app->set_image('Gtk3::Image'->new_from_icon_name("firefox\-developer\-edition",q{menu}));
     $menu1->append($app);
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_Google\ Chrome");
-    $app->signal_connect('activate', sub {system "\/usr\/bin\/google\-chrome\-stable &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ \/usr\/bin\/google\-chrome\-stable &"});
     $app->set_property('tooltip_text', "Access\ the\ Internet");
     $app->set_image('Gtk3::Image'->new_from_icon_name("google\-chrome",q{menu}));
     $menu1->append($app);
@@ -955,7 +948,7 @@ sub load_menu {
 }
 {
     my $app = 'Gtk3::ImageMenuItem'->new("_LibreOffice\ Calc");
-    $app->signal_connect('activate', sub {system "libreoffice\ \-\-calc &"});
+    $app->signal_connect('activate', sub {system "prime\-run\ libreoffice\ \-\-calc &"});
     $app->set_property('tooltip_text', "Perform\ calculations\,\ analyze\ information\ and\ manage\ lists\ in\ spreadsheets\ by\ using\ Calc\.");
     $app->set_image('Gtk3::Image'->new_from_icon_name("libreoffice\-calc",q{menu}));
     $menu1->append($app);
