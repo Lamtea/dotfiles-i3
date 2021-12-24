@@ -109,7 +109,6 @@ Run this command: `install.sh`
     - thunar-shares-plugin
     - thunar-vcs-plugin
     - thunar-sendto-clamtk
-    - gtkhash-thunar
     - gvfs
     - tumbler
     - raw-thumbnailer
