@@ -307,7 +307,7 @@ Run this command: `install.sh`
 | Mod + F1          | thunar                                |
 | Mod + Shift + F1  | catfish                               |
 | Mod + Ctrl + F1   | ranger                                |
-| Mod + F2          | vivaldi                               |
+| Mod + F2          | vivaldi-stable                        |
 | Mod + Shift+ F2   | firefox-developer-edition             |
 | Mod + Ctrl + F2   | w3m                                   |
 | Mod + F3          | thunderbird                           |
