@@ -307,8 +307,8 @@ Run this command: `install.sh`
 | Mod + F1          | thunar                                |
 | Mod + Shift + F1  | catfish                               |
 | Mod + Ctrl + F1   | ranger                                |
-| Mod + F2          | firefox-developer-edition             |
-| Mod + Shift + F2  | google-chrome-stable                  |
+| Mod + F2          | vivaldi                               |
+| Mod + Shift+ F2   | firefox-developer-edition             |
 | Mod + Ctrl + F2   | w3m                                   |
 | Mod + F3          | thunderbird                           |
 | Mod + Ctrl + F3   | neomutt                               |
@@ -332,7 +332,6 @@ Run this command: `install.sh`
 | Mod + F12         | libreoffice-calc                      |
 | Mod + Shift + F12 | libreoffice-writer                    |
 | Mod + Alt + V     | visual-studio-code                    |
-| Mod + Alt + A     | android-studio                        |
 | Mod + Alt + D     | dbeaver                               |
 | Mod + Alt + M     | meld                                  |
 | Mod + Alt + W     | wireshark                             |
