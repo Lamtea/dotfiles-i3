@@ -161,7 +161,7 @@ format-foreground = ${colors.fg}
 format-underline = ${colors.adapta-cyan}
 format-padding = 1
 label = %title%
-label-maxlen = 30
+label-maxlen = 16
 label-empty = "No title"
 
 [module/cpu-value]
@@ -321,7 +321,7 @@ format-offline = <label-offline>
 format-online-underline = ${colors.adapta-cyan}
 format-offline-underline = ${colors.adapta-grey}
 label-song = %title% - %artist%
-label-song-maxlen = 30
+label-song-maxlen = 14
 label-time = %elapsed%/%total%
 label-offline = mpd is offline
 icon-play = 

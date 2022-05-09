@@ -30,7 +30,7 @@ tabspaces: 4
 
 # Font
 font:
-  size: 13
+  size: 14
   normal:
     family: HackGenNerd
     style: Regular

@@ -12,7 +12,7 @@ xrandr_params_for() {
     CMD="${CMD} --output ${1} --auto --primary"
     return 0
   elif [[ "${2}" == 'connected' ]]; then
-    CMD="${CMD} --output ${1} --auto --above ${PRIMARY_NAME}"
+    CMD="${CMD} --output ${1} --auto --scale 0.8 --above ${PRIMARY_NAME}"
     return 0
   else
     CMD="${CMD} --output ${1} --off"
