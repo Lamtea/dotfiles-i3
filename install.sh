@@ -60,7 +60,6 @@ create_dotfile_links() {
     .config/dunst
     .config/fontconfig
     .config/i3
-    .config/menutray
     .config/mpd/mpd.conf
     .config/nitrogen
     .config/polybar

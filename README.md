@@ -122,6 +122,8 @@ Run this command: `install.sh`
   - w3m (from dotfiles)
   - firefox-developer-edition
   - google-chrome-stable
+  - vivaldi-stable
+  - brave-bin
 - Mail
   - postfix
   - neomutt (from dotfiles)
@@ -161,7 +163,6 @@ Run this command: `install.sh`
   - slack
 - Developer tool
   - visual-studio-code-bin
-  - android-studio
   - dbeaver
   - meld
   - wireshark

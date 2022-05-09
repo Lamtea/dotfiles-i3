@@ -253,7 +253,7 @@ bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print --release exec --no-startup-id flameshot full -p ~/Pictures/screenshots
 bindsym $mod+Print --release exec --no-startup-id scrot -u ~/Pictures/screenshots/%Y-%m-%d_%H-%M-%S.png
-bindsym Shift+Print --release exec --no-startup-id flameshot gui -p ~/Pictures/screenshots
+bindsym Shift+Print --release exec --no-startup-id flameshot gui
 bindsym Ctrl+Print --release exec --no-startup-id flameshot screen -p ~/Pictures/screenshots
 bindsym $mod+Shift+Ctrl+h exec prime-run xdg-open 'https://github.com/Lamtea/dotfiles-i3'
 bindsym $mod+F1 exec thunar
