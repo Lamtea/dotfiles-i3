@@ -28,7 +28,6 @@ Run this command: `install.sh`
     - fantasque
   - fantasque-sans-mono
   - monapo
-  - steam-fonts
   - liberation
 - Login manager
   - lightdm
@@ -125,7 +124,7 @@ Run this command: `install.sh`
   - vivaldi-stable
   - brave-bin
 - Mail
-  - postfix
+  - postfix(from dotfiles)
   - neomutt (from dotfiles)
   - thunderbird
   - birdtray
@@ -366,3 +365,4 @@ Run this command: `install.sh`
 - nodejs
   - bash-language-server
 - vscode
+- noevim
