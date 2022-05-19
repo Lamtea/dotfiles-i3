@@ -6,7 +6,7 @@ My dotfiles for i3-gaps on Arch linux.
 
 Run this command: `install.sh`
 
-## On depends
+## Depends
 
 - dotfiles
   - My dotfiles for command line interface on Arch linux
@@ -48,7 +48,7 @@ Run this command: `install.sh`
 - Display
   - Display CAL
     - displaycal-apply-profiles
-  - Red shift
+  - Redshift
     - redshift-gtk
 - Audio
   - Pulse audio
