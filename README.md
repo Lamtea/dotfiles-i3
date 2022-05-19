@@ -6,7 +6,7 @@ My dotfiles for i3-gaps on Arch linux.
 
 Run this command: `install.sh`
 
-## Depends
+## Depend on
 
 - dotfiles
   - My dotfiles for command line interface on Arch linux
