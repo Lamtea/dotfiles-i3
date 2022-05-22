@@ -1,15 +1,10 @@
 #!/bin/bash
 
 # browser settings.
-if command -v vivaldi-stable 1>/dev/null 2>&1; then
-	export BROWSER="vivaldi-stable"
-elif command -v google-chrome-stable 1>/dev/null 2>&1; then
-	export BROWSER="google-chrome-stable"
-elif command -v firefox-developer-edition 1>/dev/null 2>&1; then
-	export BROWSER="firefox-developer-edition"
-else
-	export BROWSER="firefox"
-fi
+export BROWSER="vivaldi-stable"
+#export BROWSER="google-chrome-stable"
+#export BROWSER="firefox-developer-edition"
+#export BROWSER="firefox"
 
 # qt5ct settings.
 export QT_QPA_PLATFORMTHEME="qt5ct"
