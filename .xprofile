@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# browser settings.
+if command -v vivaldi-stable 1>/dev/null 2>&1; then
+	export BROWSER="vivaldi-stable"
+elif command -v google-chrome-stable 1>/dev/null 2>&1; then
+	export BROWSER="google-chrome-stable"
+elif command -v firefox-developer-edition 1>/dev/null 2>&1; then
+	export BROWSER="firefox-developer-edition"
+else
+	export BROWSER="firefox"
+fi
+
 # qt5ct settings.
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
@@ -21,10 +32,10 @@ export DefaultIMModule=fcitx
 
 # device settings.
 if [ "${XDG_CURRENT_DESKTOP}" = "i3" ]; then
-  xset s off
-  xset dpms 1800 2400 3600
-  srandrd ~/.bin/detect_display.sh && ~/.bin/setup_wacom.sh
-  ~/.bin/detect_display.sh
-  ~/.bin/setup_wacom.sh
-  ~/.bin/setup_touchpad.sh off
+	xset s off
+	xset dpms 1800 2400 3600
+	srandrd ~/.bin/detect_display.sh && ~/.bin/setup_wacom.sh
+	~/.bin/detect_display.sh
+	~/.bin/setup_wacom.sh
+	~/.bin/setup_touchpad.sh off
 fi
