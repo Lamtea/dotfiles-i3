@@ -259,7 +259,7 @@ bindsym $mod+Shift+Ctrl+h exec prime-run xdg-open 'https://github.com/Lamtea/dot
 bindsym $mod+F1 exec thunar
 bindsym $mod+Shift+F1 exec catfish
 bindsym $mod+Ctrl+F1 exec $terminal_command -e 'ranger'
-bindsym $mod+F2 exec prime-run vivaldi-stable --use-gl=desktop
+bindsym $mod+F2 exec prime-run google-chrome-stable --use-gl=desktop
 bindsym $mod+Shift+F2 exec prime-run firefox-developer-edition
 bindsym $mod+Ctrl+F2 exec $terminal_command -e 'w3m https://google.com'
 bindsym $mod+F3 exec thunderbird
