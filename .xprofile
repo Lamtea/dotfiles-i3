@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # browser settings.
-export BROWSER="google-chrome-stable"
-#export BROWSER="vivaldi-stable"
-#export BROWSER="brave"
+export BROWSER="vivaldi-stable"
+#export BROWSER="google-chrome-stable"
 #export BROWSER="firefox-developer-edition"
 #export BROWSER="firefox"
 

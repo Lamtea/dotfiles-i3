@@ -259,8 +259,8 @@ bindsym $mod+Shift+Ctrl+h exec prime-run xdg-open 'https://github.com/Lamtea/dot
 bindsym $mod+F1 exec thunar
 bindsym $mod+Shift+F1 exec catfish
 bindsym $mod+Ctrl+F1 exec $terminal_command -e 'ranger'
-bindsym $mod+F2 exec prime-run google-chrome-stable --use-gl=desktop
-bindsym $mod+Shift+F2 exec prime-run firefox-developer-edition
+bindsym $mod+F2 exec prime-run vivaldi-stable --use-gl=desktop
+bindsym $mod+Shift+F2 exec prime-run brave --incognito --use-gl=desktop
 bindsym $mod+Ctrl+F2 exec $terminal_command -e 'w3m https://google.com'
 bindsym $mod+F3 exec thunderbird
 bindsym $mod+Ctrl+F3 exec $terminal_command -e 'neomutt'
@@ -284,6 +284,8 @@ bindsym $mod+Shift+F11 exec prime-run peek
 bindsym $mod+F12 exec prime-run libreoffice --calc
 bindsym $mod+Shift+F12 exec libreoffice --writer
 bindsym $mod+Mod1+v exec code
+bindsym $mod+Mod1+c exec prime-run google-chrome-stable --use-gl=desktop
+bindsym $mod+Mod1+f exec prime-run firefox-developer-edition
 bindsym $mod+Mod1+d exec dbeaver
 bindsym $mod+Mod1+m exec meld
 bindsym $mod+Mod1+w exec wireshark
