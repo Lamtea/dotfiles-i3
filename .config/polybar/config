@@ -411,7 +411,7 @@ label-unmounted-underline = ${colors.adapta-grey}
 
 [module/filesystem-home]
 type = internal/fs
-mount-0 = /home
+mount-0 = /home/data
 interval = 60
 spacing = 0
 fixed-values = true
