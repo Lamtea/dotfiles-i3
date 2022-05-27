@@ -260,7 +260,7 @@ bindsym $mod+F1 exec thunar
 bindsym $mod+Shift+F1 exec catfish
 bindsym $mod+Ctrl+F1 exec $terminal_command -e 'ranger'
 bindsym $mod+F2 exec prime-run vivaldi-stable --use-gl=desktop
-bindsym $mod+Shift+F2 exec prime-run brave --incognito --use-gl=desktop
+bindsym $mod+Shift+F2 exec prime-run brave --incognito --tor --use-gl=desktop
 bindsym $mod+Ctrl+F2 exec $terminal_command -e 'w3m https://google.com'
 bindsym $mod+F3 exec thunderbird
 bindsym $mod+Ctrl+F3 exec $terminal_command -e 'neomutt'
