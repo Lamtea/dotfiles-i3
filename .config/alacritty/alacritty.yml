@@ -10,7 +10,7 @@ shell:
 
 # Window
 window:
-  opacity: 0.9
+  opacity: 1.0
   padding:
     x: 2
     y: 0
