@@ -39,7 +39,7 @@ Complete the following:
 > #   docker(optional), containerd(optional), snapper(optional)
 > # See Arch wiki for settings.
 > sudo systemctl --user enable <dependent user service packages>
-> # Enable mpd, timimidity(optional)
+> # Enable mpd, timidity(optional)
 ```
 
 ```bash
@@ -315,8 +315,6 @@ Set the tools:
     (optional)
     (If you are not sure,
     remove lines of 'exec --no-startup-id ~/.bin/rclone_mount.sh' from '.config/i3/config')
-- Utility(optional)
-  - qtqr
 - System admin(optional)
   - gparted
   - gsmartcontrol
@@ -324,6 +322,8 @@ Set the tools:
     - snapper
     - snap-pac
     - grub-btrfs
+- Utility(optional)
+  - qtqr
 - Systemtray application
   - udiskie
   - remmina
@@ -466,8 +466,8 @@ Set the tools:
 | Mod + Shift + C        | Reload the configuration file                      |
 | Mod + Shift + R        | Restart i3                                         |
 | Mod + Shift + E        | Exit i3                                            |
-| Mod + 0                | Set shutdown, restart and locking features         |
-| Mod + 9                | Lock screen                                        |
+| Mod + 0                | Set shutdown, restart // and locking features      |
+| Mod + 9                | // Lock screen                                     |
 | Mod + Ctrl + M         | Control audio volume (exec pavucontrol)            |
 | Mod + Ctrl + W         | Control firewall (exec gufw)                       |
 | Mod + Ctrl + X         | Kill window (exec xkill)                           |
