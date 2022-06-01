@@ -54,9 +54,6 @@
 ## mpd
 !/.config/mpd/
 !/.config/mpd/**/*
-## nitrogen
-!/.config/nitrogen/
-!/.config/nitrogen/**/*
 ## polybar
 !/.config/polybar/
 !/.config/polybar/**/*
