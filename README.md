@@ -96,7 +96,7 @@ Run this command: `install.sh`
   - scrot
   - flameshot
 - Terminal
-  - urxvt
+  - rxvt-unicode
   - alacritty
 - File manager
   - Thunar
@@ -176,7 +176,7 @@ Run this command: `install.sh`
   - lutris
   - steam
   - speedcrunch
-  - transmission-gtk
+  - tm
   - calibre
   - mcomix
   - geeqie
@@ -307,7 +307,7 @@ Run this command: `install.sh`
 | Mod + Shift + F1  | catfish                               |
 | Mod + Ctrl + F1   | ranger                                |
 | Mod + F2          | vivaldi-stable                        |
-| Mod + Shift+ F2   | firefox-developer-edition             |
+| Mod + Shift+ F2   | brave                                 |
 | Mod + Ctrl + F2   | w3m                                   |
 | Mod + F3          | thunderbird                           |
 | Mod + Ctrl + F3   | neomutt                               |
@@ -317,7 +317,7 @@ Run this command: `install.sh`
 | Mod + F5          | discord                               |
 | Mod + Shift + F5  | twinux                                |
 | Mod + F6          | jdim                                  |
-| Mod + Ctrl + F6   | transmission                          |
+| Mod + Ctrl + F6   | tm                                    |
 | Mod + F7          | lutris                                |
 | Mod + Shift + F7  | steam                                 |
 | Mod + F8          | speedcrunch                           |
@@ -330,6 +330,8 @@ Run this command: `install.sh`
 | Mod + Shift + F11 | peek                                  |
 | Mod + F12         | libreoffice-calc                      |
 | Mod + Shift + F12 | libreoffice-writer                    |
+| Mod + Alt + C     | google-chrome-stable                  |
+| Mod + Alt + F     | firefox-developer-edition             |
 | Mod + Alt + V     | visual-studio-code                    |
 | Mod + Alt + D     | dbeaver                               |
 | Mod + Alt + M     | meld                                  |
