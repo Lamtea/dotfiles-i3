@@ -12,11 +12,15 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 # java theme settings.
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel ${_JAVA_OPTIONS}"
 
+# hardware vieo acceleration settings.
+#export LIBVA_DRIVER_NAME="i965"
+export LIBVA_DRIVER_NAME="iHD"
+#export LIBVA_DRIVER_NAME="nvidia"
+export VDPAU_DRIVER="va_gl"
+#export VDPAU_DRIVER="nvidia"
+
 # vulkan settings.
 export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/nvidia_icd.json
-
-# wine settings.
-export WINEARCH="win64"
 
 # Fcitx settings.
 export GTK_IM_MODULE=fcitx

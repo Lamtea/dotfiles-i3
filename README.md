@@ -1,19 +1,140 @@
 # dotfiles-i3
 
-My dotfiles for i3-gaps on Arch linux.
+My dotfiles for i3-gaps on Arch linux on laptop.
 
 ## How to install
 
-Run this command: `install.sh`
+### Preparation
+
+Complete the following:
+
+[dotfiles](https://github.com/Lamtea/dotfiles)
+(My dotfiles for command line interface on Arch linux)
+
+### Installation
+
+```bash
+> cd ~
+> git clone https://github.com/Lamtea/dotfiles-i3.git .dotfiles-i3
+```
+
+```bash
+> cd .dotfiles-i3
+> ./install.sh
+```
+
+```bash
+> paru -S <dependent packages>
+> # Options should use other packages or be ignored.
+> # You may have to edit with the file by changing options.
+> # See Arch wiki for settings.
+```
+
+```bash
+> sudo systemctl enable <dependent service packages>
+> # Set and enable the required services.
+> #   NetworkManager, wpa_supplicant, apparmor, avahi-daemon(optional), bluetooth,
+> #   clamav-daemon(optional), clamav-freshclam(optional), cups(optional), cups-browserd(optional),
+> #   hddtemp, lightdm(or lightdm-plymouth), nmb(optional), smb(optional), colord(optional),
+> #   docker(optional), containerd(optional), snapper(optional)
+> # See Arch wiki for settings.
+> sudo systemctl --user enable <dependent user service packages>
+> # Enable mpd, timimidity(optional)
+```
+
+```bash
+> cd ~
+> cp <your favorite icon> .face
+> vi .bin/detect_display.sh
+>   PRIMARY_NAME="<your primary monitor name>" # run: xrandr
+> vi .bin/polybar_launch.sh
+>   DISPLAY_MAIN="<your primary monitor name>" # run: xrandr
+>   DISPLAY_SUB="<your secondary monitor name>" # run: xrandr
+> vi .config/polybar/config
+>   # Customize to your hardware.
+```
+
+```bash
+> sudo vi /etc/default/grub
+>   GRUB_CMDLINE_LINUX_DEFAULT="apparmor=1 lsm=lockdown,yama,apparmor audit=1 nvidia-drm.modeset=1
+> sudo update-grub
+> # Add apparmor,lsm,audit to kernel parameters.
+> # If you have NVIDIA Optimus, add nvidia-drm.
+```
+
+```bash
+> sudo systemctl reboot
+```
+
+Set the tools:
+
+- themes:
+  - lxappearrance-gtk3
+    - Adapta-Nokto
+    - Papirus-Dark
+    - Flatbed Cursors original Black
+    - Noto Sans CJK JP Regular
+  - kvantum
+    - KvAdaptaAark
+  - fcitx5
+    - nord
 
 ## Depend on
 
-- dotfiles
-  - My dotfiles for command line interface on Arch linux
+- [dotfiles](https://github.com/Lamtea/dotfiles)
+  (My dotfiles for command line interface on Arch linux)
 - X
+  - xorg-server
   - xorg-apps(not include xorg-xbacklight, replaced acpilight)
+  - xf86-input-wacom
+    (optional)
+    (If you haven't wacom tablet,
+    remove '.bin/setup_wacom.sh' and the relevant part from '.xprofile')
   - srandrd
   - numlockx
+- Graphics
+  (optional)
+  (If you haven't NVIDIA Optimus,
+  remove 'prime-run' and 'LIBVA_DRIVER_NAME="nvidia"' from '.config/i3/config')
+  - GPU
+    - Intel(UHD 630)
+    - NVIDIA Optimus(GeForce MX150)
+      - nvidia-prime
+      - nvidia-settings
+  - Hardware video acceleration
+    - intel-media-driver
+    - intel-gpu-tools
+    - libva-utils
+    - libvdpau-va-gl
+    - vdpauinfo
+    - libva-nvidia-driver(for firefox-developer-edition)
+  - Vulkan
+    - vulkan-icd-loader
+    - vulkan-headers
+    - vulkan-validation-layers
+    - vulkan-tools
+    - vulkan-intel
+    - nvidia-utils
+  - OpenCL
+    - opencl-headers
+    - ocl-icd
+    - intel-compute-runtime
+    - opencl-nvidia
+  - CUDA
+    - cuda
+    - cuda-tools
+    - ncurses5-compat-libs
+    - opencv-cuda
+    - python-cuda
+    - python-pycuda
+  - Machine learning
+    - cudnn
+    - tensorflow-opt-cuda
+    - python-tensorflow-opt-cuda
+- Icon
+  - papirus-icon-theme
+- Cursor
+  - xcursor-flated
 - Font
   - noto-fonts
   - noto-fonts-cjk
@@ -22,21 +143,33 @@ Run this command: `install.sh`
   - ricty
   - hackgen
   - meslo-nerd-font-powerlevel10k
-  - nerd-fonts-complete
-    - noto
-    - hack
-    - fantasque
+  - nerd-fonts-complete(noto, hack, fantasque)
   - fantasque-sans-mono
   - monapo
-  - liberation
+  - liberation(optional)(for steam)
+  - font-manager(font viewer)
+- Theme manager
+  - Gtk
+    - lxappearrance-gtk3
+  - Qt
+    - kvantum
 - Login manager
-  - lightdm
+  - lightdm(use: lightdm-plymouth)
     - lightdm-webkit2-greeter
     - lightdm-webkit-theme-litarvan
+- User manager
+  - mugshot
 - Window manager
   - i3-gaps
 - Status bar
   - polybar
+    - procps-ng
+    - nvidia-smi
+      (optional)
+      (If you haven't NVIDIA Optimus,
+      remove '.bin/nvidiatemp.sh' and the relevant part form '.config/polybar/config')
+    - hddtemp
+      - gnu-netcat
 - Menu
   - dockx
   - rofi
@@ -47,7 +180,11 @@ Run this command: `install.sh`
   - nitrogen
 - Display
   - Display CAL
+    (optional)
+    (If you haven't monitor for creators,
+    remove a line of 'exec --no-startup-id displaycal-apply-profiles' from '.config/i3/config')
     - displaycal-apply-profiles
+    - colord
   - Redshift
     - redshift-gtk
 - Audio
@@ -61,6 +198,9 @@ Run this command: `install.sh`
   - dunst
 - System monitor
   - conky-lua-nv
+    (optional)
+    (If you are not sure,
+    remove lines of 'exec --no-startup-id conky-lua-nv' from '.config/i3/config')
 - Package manager
   - paru
   - octopi
@@ -74,10 +214,13 @@ Run this command: `install.sh`
 - Keyring
   - gnome-keyring (from dotfiles)
   - libgnome-keyring (from dotfiles)
-  - seahorse
+  - seahorse(optional)
 - Network manager
-  - Network manager
-    - nm-applet
+  - nm-applet
+- mDNS(optional)
+  - avahi
+- Windows cooperation(optional)
+  - samba
 - Bluetooth manager
   - Blueman
     - blueman-applet
@@ -87,11 +230,12 @@ Run this command: `install.sh`
   - systemd-logind
   - tlp
   - tlp-ui
+  - thermald
 - Screen locker
-  - xss-lock
-  - xautolock
-  - xscreensaver
-  - light-locker
+  - // xss-lock
+  - // xautolock
+  - // xscreensaver
+  - // light-locker
 - Screen shooter
   - scrot
   - flameshot
@@ -102,29 +246,39 @@ Run this command: `install.sh`
   - Thunar
     - thunar
     - thunar-archive-plugin
+      (optional)
+      (depend on Archiver)
     - thunar-media-tags-plugin
     - thunar-volman
     - thunar-dropbox
+      (optional)
+      (require dropbox account)
     - thunar-shares-plugin
+      (optional)
+      (depend on samba)
     - thunar-vcs-plugin
     - thunar-sendto-clamtk
+      (optional)
+      (depend on clamav/clamtk)
     - gvfs
     - tumbler
     - raw-thumbnailer
     - catfish
-  - ranger
+  - ranger(from dotfiles)
+- Archiver(optional)
+  - Xarchiver
 - Editor
   - neovim(from dotfiles)
-  - mousepad
+  - mousepad(optional)
 - Browser
-  - w3m (from dotfiles)
+  - w3m(from dotfiles)
   - vivaldi-stable
   - brave-bin
   - google-chrome-stable
   - firefox-developer-edition
 - Mail
   - postfix(from dotfiles)
-  - neomutt (from dotfiles)
+  - neomutt(from dotfiles)
   - thunderbird
   - birdtray
 - Music player
@@ -132,23 +286,44 @@ Run this command: `install.sh`
   - ncmpcpp
   - cantata
   - spotify
+  - timidity++(optional)
 - Input method
-  - fcitx5
-  - mozc
-- Printer & scanner
+  - fcitx5-im
+  - fcitx5-nord
+  - fcitx5-mozc
+- PDF Viewer(optional)
+  - zathura
+    - mupdf
+  - epdfview
+- Printer & scanner(optional)
   - CUPS
     - brother DCP-J152N printer driver (brother official)
     - cups-pdf
   - brscan4
   - brscan-skey
-- Virus scanner
+- Virus scanner(optional)
   - clamav
   - clamtk
+- Writer(optional)
+  - xfburn
+  - etcher-bin
 - Firewall
   - ufw
   - gufw
 - Cloud
-  - rclone (from dotfiles)
+  - rclone(from dotfiles)
+    (optional)
+    (If you are not sure,
+    remove lines of 'exec --no-startup-id ~/.bin/rclone_mount.sh' from '.config/i3/config')
+- Utility(optional)
+  - qtqr
+- System admin(optional)
+  - gparted
+  - gsmartcontrol
+  - snapper-gui-git(btrfs user only)
+    - snapper
+    - snap-pac
+    - grub-btrfs
 - Systemtray application
   - udiskie
   - remmina
@@ -157,13 +332,19 @@ Run this command: `install.sh`
   - veracrypt
   - uget
   - xpad
-  - joplin
+  - joplin(appimage)
   - slack
 - Developer tool
   - visual-studio-code-bin
   - dbeaver
   - meld
   - wireshark
+  - filezilla(optional)
+  - docker(optional)
+    - docker-compose(deplicated)
+  - containerd(optional)
+    - nerdctl
+  - virtualbox(optional)
 - Creator tool
   - krita
   - gimp
@@ -171,16 +352,18 @@ Run this command: `install.sh`
   - blender
 - Main application
   - discord
-  - twinux
+  - twinux(from snap)
   - jd
   - lutris
   - steam
   - speedcrunch
-  - tm
   - calibre
   - mcomix
   - geeqie
   - xsane
+    (optional)
+    (If you haven't scanner,
+    remove a line of 'exec xsane' from '.config/i3/config')
   - smplayer
   - peek
   - libreoffice
@@ -307,7 +490,7 @@ Run this command: `install.sh`
 | Mod + Shift + F1  | catfish                               |
 | Mod + Ctrl + F1   | ranger                                |
 | Mod + F2          | vivaldi-stable                        |
-| Mod + Shift+ F2   | brave                                 |
+| Mod + Shift+ F2   | brave(incognito, tor)                 |
 | Mod + Ctrl + F2   | w3m                                   |
 | Mod + F3          | thunderbird                           |
 | Mod + Ctrl + F3   | neomutt                               |
@@ -317,7 +500,6 @@ Run this command: `install.sh`
 | Mod + F5          | discord                               |
 | Mod + Shift + F5  | twinux                                |
 | Mod + F6          | jdim                                  |
-| Mod + Ctrl + F6   | tm                                    |
 | Mod + F7          | lutris                                |
 | Mod + Shift + F7  | steam                                 |
 | Mod + F8          | speedcrunch                           |
@@ -332,6 +514,7 @@ Run this command: `install.sh`
 | Mod + Shift + F12 | libreoffice-writer                    |
 | Mod + Alt + C     | google-chrome-stable                  |
 | Mod + Alt + F     | firefox-developer-edition             |
+| Mod + Alt + Z     | firefox-developer-edition(debugger)   |
 | Mod + Alt + V     | visual-studio-code                    |
 | Mod + Alt + D     | dbeaver                               |
 | Mod + Alt + M     | meld                                  |

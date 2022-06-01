@@ -81,7 +81,7 @@ content = 
 content-padding = 1
 content-foreground = ${colors.fg}
 content-underline = ${colors.adapta-cyan}
-click-left = prime-run xdg-open https://www.google.com/ &
+click-left = xdg-open https://www.google.com/ &
 
 [module/amazon]
 type = custom/text
@@ -89,7 +89,7 @@ content = 
 content-padding = 1
 content-foreground = ${colors.fg}
 content-underline = ${colors.adapta-cyan}
-click-left = prime-run xdg-open https://www.amazon.co.jp/ &
+click-left = xdg-open https://www.amazon.co.jp/ &
 
 [module/github]
 type = custom/text
@@ -97,7 +97,7 @@ content = 
 content-padding = 1
 content-foreground = ${colors.fg}
 content-underline = ${colors.adapta-cyan}
-click-left = prime-run xdg-open https://www.github.com/ &
+click-left = xdg-open https://www.github.com/ &
 
 [module/youtube]
 type = custom/text
@@ -105,7 +105,7 @@ content = 
 content-padding = 1
 content-foreground = ${colors.fg}
 content-underline = ${colors.adapta-cyan}
-click-left = prime-run xdg-open https://www.youtube.com/ &
+click-left = xdg-open https://www.youtube.com/ &
 
 [module/pkg]
 type = custom/script
