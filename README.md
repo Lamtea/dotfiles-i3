@@ -466,8 +466,8 @@ Set the tools:
 | Mod + Shift + C        | Reload the configuration file                      |
 | Mod + Shift + R        | Restart i3                                         |
 | Mod + Shift + E        | Exit i3                                            |
-| Mod + 0                | Set shutdown, restart // and locking features      |
-| Mod + 9                | // Lock screen                                     |
+| Mod + 0                | Set shutdown, restart and locking features         |
+| Mod + 9                | Lock screen                                        |
 | Mod + Ctrl + M         | Control audio volume (exec pavucontrol)            |
 | Mod + Ctrl + W         | Control firewall (exec gufw)                       |
 | Mod + Ctrl + X         | Kill window (exec xkill)                           |
