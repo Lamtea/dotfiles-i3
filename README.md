@@ -19,56 +19,56 @@ Complete the following:
 ### Installation
 
 ```bash
-> paru -S <dependent packages>
-> # Options can use other packages or be ignored.
-> # You may have to edit with the file by changing options.
-> # See Arch wiki for settings.
+paru -S <dependent packages>
+# Options can use other packages or be ignored.
+# You may have to edit with the file by changing options.
+# See Arch wiki for settings.
 ```
 
 ```bash
-> sudo systemctl enable <dependent service packages>
-> # Set and enable the required services.
-> #   NetworkManager, wpa_supplicant, apparmor, avahi-daemon(optional), bluetooth,
-> #   clamav-daemon(optional), clamav-freshclam(optional), cups(optional), cups-browserd(optional),
-> #   hddtemp, lightdm(or lightdm-plymouth), nmb(optional), smb(optional), colord(optional),
-> #   docker(optional), containerd(optional), snapper(optional)
-> # See Arch wiki for settings.
-> sudo systemctl --user enable <dependent user service packages>
-> # Enable timidity(optional)
+sudo systemctl enable <dependent service packages>
+# Set and enable the required services.
+#   NetworkManager, wpa_supplicant, apparmor, avahi-daemon(optional), bluetooth,
+#   clamav-daemon(optional), clamav-freshclam(optional), cups(optional), cups-browserd(optional),
+#   hddtemp, lightdm(or lightdm-plymouth), nmb(optional), smb(optional), colord(optional),
+#   docker(optional), containerd(optional), snapper(optional)
+# See Arch wiki for settings.
+sudo systemctl --user enable <dependent user service packages>
+# Enable timidity(optional)
 ```
 
 ```bash
-> cd ~
-> git clone https://github.com/Lamtea/dotfiles-i3.git .dotfiles-i3
+cd ~
+git clone https://github.com/Lamtea/dotfiles-i3.git .dotfiles-i3
 ```
 
 ```bash
-> cd .dotfiles-i3
-> ./install.sh
+cd .dotfiles-i3
+./install.sh
 ```
 
 ```bash
-> cd ~
-> cp <your favorite icon> .face
-> vi .bin/detect_display.sh
->   PRIMARY_NAME="<your primary monitor name>" # run: xrandr
-> vi .bin/polybar_launch.sh
->   DISPLAY_MAIN="<your primary monitor name>" # run: xrandr
->   DISPLAY_SUB="<your secondary monitor name>" # run: xrandr
-> vi .config/polybar/config
->   # Customize to your hardware.
+cd ~
+cp <your favorite icon> .face
+vi .bin/detect_display.sh
+  PRIMARY_NAME="<your primary monitor name>" # run: xrandr
+vi .bin/polybar_launch.sh
+  DISPLAY_MAIN="<your primary monitor name>" # run: xrandr
+  DISPLAY_SUB="<your secondary monitor name>" # run: xrandr
+vi .config/polybar/config
+  # Customize to your hardware.
 ```
 
 ```bash
-> sudo vi /etc/default/grub
->   GRUB_CMDLINE_LINUX_DEFAULT="apparmor=1 lsm=lockdown,yama,apparmor audit=1 nvidia-drm.modeset=1..."
-> sudo update-grub
-> # Add apparmor,lsm,audit to kernel parameters.
-> # If you have NVIDIA Optimus, add nvidia-drm.
+sudo vi /etc/default/grub
+  GRUB_CMDLINE_LINUX_DEFAULT="apparmor=1 lsm=lockdown,yama,apparmor audit=1 nvidia-drm.modeset=1..."
+sudo update-grub
+# Add apparmor,lsm,audit to kernel parameters.
+# If you have NVIDIA Optimus, add nvidia-drm.
 ```
 
 ```bash
-> sudo systemctl reboot
+sudo systemctl reboot
 ```
 
 Set the tools:
