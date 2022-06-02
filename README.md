@@ -25,7 +25,7 @@ Complete the following:
 
 ```bash
 > paru -S <dependent packages>
-> # Options should use other packages or be ignored.
+> # Options can use other packages or be ignored.
 > # You may have to edit with the file by changing options.
 > # See Arch wiki for settings.
 ```
