@@ -2,6 +2,11 @@
 
 My dotfiles for i3-gaps on Arch linux on laptop.
 
+## Overview
+
+![a](https://user-images.githubusercontent.com/48638671/171595960-034ebc51-6fd4-4aa2-802c-ef6d92cffac4.png)
+![b](https://user-images.githubusercontent.com/48638671/171595967-832cff9d-64ee-489c-ab50-dcb342b118ce.png)
+
 ## How to install
 
 ### Preparation
