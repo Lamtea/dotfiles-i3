@@ -14,16 +14,6 @@ Complete the following:
 ### Installation
 
 ```bash
-> cd ~
-> git clone https://github.com/Lamtea/dotfiles-i3.git .dotfiles-i3
-```
-
-```bash
-> cd .dotfiles-i3
-> ./install.sh
-```
-
-```bash
 > paru -S <dependent packages>
 > # Options can use other packages or be ignored.
 > # You may have to edit with the file by changing options.
@@ -39,7 +29,17 @@ Complete the following:
 > #   docker(optional), containerd(optional), snapper(optional)
 > # See Arch wiki for settings.
 > sudo systemctl --user enable <dependent user service packages>
-> # Enable mpd, timidity(optional)
+> # Enable timidity(optional)
+```
+
+```bash
+> cd ~
+> git clone https://github.com/Lamtea/dotfiles-i3.git .dotfiles-i3
+```
+
+```bash
+> cd .dotfiles-i3
+> ./install.sh
 ```
 
 ```bash
@@ -68,7 +68,7 @@ Complete the following:
 
 Set the tools:
 
-- themes:
+- theme:
   - lxappearrance-gtk3
     - Adapta-Nokto
     - Papirus-Dark
