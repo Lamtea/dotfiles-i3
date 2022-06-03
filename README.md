@@ -39,7 +39,7 @@ sudo systemctl enable <dependent service packages>
 #   docker(optional), containerd(optional), snapper(optional)
 # See Arch wiki for settings.
 sudo systemctl --user enable <dependent user service packages>
-# Enable timidity(optional)
+# Enable mpd, timidity(optional)
 ```
 
 ```bash
