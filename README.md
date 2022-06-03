@@ -4,8 +4,13 @@ My dotfiles for i3-gaps on Arch linux on laptop.
 
 ## Overview
 
-![a](https://user-images.githubusercontent.com/48638671/171595960-034ebc51-6fd4-4aa2-802c-ef6d92cffac4.png)
-![b](https://user-images.githubusercontent.com/48638671/171595967-832cff9d-64ee-489c-ab50-dcb342b118ce.png)
+Main display:
+
+![overview1](https://user-images.githubusercontent.com/48638671/171595960-034ebc51-6fd4-4aa2-802c-ef6d92cffac4.png)
+
+Sub display:
+
+![overview2](https://user-images.githubusercontent.com/48638671/171595967-832cff9d-64ee-489c-ab50-dcb342b118ce.png)
 
 ## How to install
 
@@ -20,7 +25,7 @@ Complete the following:
 
 ```bash
 paru -S <dependent packages>
-# Options can use other packages or be ignored.
+# Options can use other packages or be ignored(see below 'Depend on' list).
 # You may have to edit with the file by changing options.
 # See Arch wiki for settings.
 ```
@@ -28,9 +33,9 @@ paru -S <dependent packages>
 ```bash
 sudo systemctl enable <dependent service packages>
 # Set and enable the required services.
-#   NetworkManager, wpa_supplicant, apparmor, avahi-daemon(optional), bluetooth,
+#   NetworkManager, wpa_supplicant, apparmor, avahi-daemon, bluetooth, hddtemp,
 #   clamav-daemon(optional), clamav-freshclam(optional), cups(optional), cups-browserd(optional),
-#   hddtemp, lightdm(or lightdm-plymouth), nmb(optional), smb(optional), colord(optional),
+#   lightdm(or lightdm-plymouth), nmb(optional), smb(optional), colord(optional),
 #   docker(optional), containerd(optional), snapper(optional)
 # See Arch wiki for settings.
 sudo systemctl --user enable <dependent user service packages>
@@ -87,32 +92,32 @@ Set the tools:
 ## Depend on
 
 - [dotfiles](https://github.com/Lamtea/dotfiles)
-  (My dotfiles for command line interface on Arch linux)
+  _(My dotfiles for command line interface on Arch linux)_
 - X
   - xorg-server
-  - xorg-apps(not include xorg-xbacklight, replaced acpilight)
+  - xorg-apps _(not include xorg-xbacklight, replaced acpilight)_
   - xf86-input-wacom
-    (optional)
-    (If you haven't wacom tablet,
-    remove '.bin/setup_wacom.sh' and the relevant part from '.xprofile')
-  - srandrd
+    **(optional)**
+    _(If you haven't wacom tablet,
+    remove '.bin/setup_wacom.sh' and the relevant part from '.xprofile')_
+  - srandrd _(aur)_
   - numlockx
 - Graphics
-  (optional)
-  (If you haven't NVIDIA Optimus,
-  remove 'prime-run' and 'LIBVA_DRIVER_NAME="nvidia"' from '.config/i3/config')
+  **(optional)**
+  _(If you haven't NVIDIA Optimus,
+  remove 'prime-run' from '.config/i3/config',
+  and remove or edit '.config/mpv/mpv.conf')_
   - GPU
-    - Intel(UHD 630)
-    - NVIDIA Optimus(GeForce MX150)
+    - Intel _(UHD 630)_
+    - NVIDIA Optimus _(GeForce MX150)_
       - nvidia-prime
       - nvidia-settings
   - Hardware video acceleration
-    - intel-media-driver
+    - libva-intel-driver
     - intel-gpu-tools
     - libva-utils
     - libvdpau-va-gl
     - vdpauinfo
-    - libva-nvidia-driver(for firefox-developer-edition)
   - Vulkan
     - vulkan-icd-loader
     - vulkan-headers
@@ -128,7 +133,7 @@ Set the tools:
   - CUDA
     - cuda
     - cuda-tools
-    - ncurses5-compat-libs
+    - ncurses5-compat-libs _(aur)_
     - opencv-cuda
     - python-cuda
     - python-pycuda
@@ -145,39 +150,41 @@ Set the tools:
   - noto-fonts-cjk
   - noto-fonts-emoji
   - noto-fonts-extra
-  - ricty
-  - hackgen
-  - meslo-nerd-font-powerlevel10k
-  - nerd-fonts-complete(noto, hack, fantasque)
+  - ttf-ricty _(aur)_
+  - ttf-hackgen _(aur)_
+  - ttf-meslo-nerd-font-powerlevel10k _(aur)_
+  - nerd-fonts-complete _(aur)_
   - fantasque-sans-mono
-  - monapo
-  - liberation(optional)(for steam)
-  - font-manager(font viewer)
+  - ttf-monapo
+  - ttf-liberation **(optional)** _(for steam)_
+  - font-manager _(font viewer)_
 - Theme manager
   - Gtk
     - lxappearrance-gtk3
   - Qt
     - kvantum
 - Login manager
-  - lightdm(use: lightdm-plymouth)
+  - lightdm _(If you are using plymouth, use ligtdm-plymouth.service)_
     - lightdm-webkit2-greeter
     - lightdm-webkit-theme-litarvan
 - User manager
-  - mugshot
+  - mugshot _(aur)_
 - Window manager
   - i3-gaps
 - Status bar
   - polybar
     - procps-ng
     - nvidia-smi
-      (optional)
-      (If you haven't NVIDIA Optimus,
-      remove '.bin/nvidiatemp.sh' and the relevant part form '.config/polybar/config')
+      **(optional)**
+      _(If you haven't NVIDIA Optimus,
+      remove '.bin/nvidiatemp.sh' and the relevant part form '.config/polybar/config')_
     - hddtemp
       - gnu-netcat
 - Menu
-  - dockx
+  - dockbarx _(aur)_
   - rofi
+    - rofi-calc
+    - rofi-dmenu _(aur)_
   - xfce4-appfinder
 - Compositor
   - picom/compton
@@ -185,62 +192,63 @@ Set the tools:
   - nitrogen
 - Display
   - Display CAL
-    (optional)
-    (If you haven't monitor for creators,
-    remove a line of 'exec --no-startup-id displaycal-apply-profiles' from '.config/i3/config')
+    **(optional)**
+    _(If you haven't monitor for creators,
+    remove a line of 'exec --no-startup-id displaycal-apply-profiles' from '.config/i3/config')_
     - displaycal-apply-profiles
     - colord
+      - colord-gtk
+      - colord-sane
   - Redshift
-    - redshift-gtk
+    - redshift
 - Audio
-  - Pulse audio
+  - pulseaudio
+    - pulseaudio-alsa
+    - pluseaudio-bluetooth
+    - pluseaudio-zeroconf
     - volumeicon
     - pavucontrol
 - Geolocation
-  - GeoClue
-    - geoclue-2.0
+  - geoclue
 - Notify daemon
   - dunst
 - System monitor
   - conky-lua-nv
-    (optional)
-    (If you are not sure,
-    remove lines of 'exec --no-startup-id conky-lua-nv' from '.config/i3/config')
+    **(optional)**
+    _(aur, If you are not sure,
+    remove lines of 'exec --no-startup-id conky-lua-nv' from '.config/i3/config')_
 - Package manager
-  - paru
-  - octopi
-  - snap
+  - paru _(aur)_
+  - octopi _(aur)_
+  - snapd _(aur)_
 - Linux security module
-  - App Armor
-    - aa-notify
+  - apparmor
 - Policy kit
-  - Polkit gnome
-    - polkit-gnome-authentication-agent-1
+  - polkit-gnome
 - Keyring
-  - gnome-keyring (from dotfiles)
-  - libgnome-keyring (from dotfiles)
-  - seahorse(optional)
+  - gnome-keyring _(from dotfiles)_
+  - libgnome-keyring _(from dotfiles)_
+  - seahorse
 - Network manager
-  - nm-applet
-- mDNS(optional)
+  - networkmanager
+- mDNS
   - avahi
-- Windows cooperation(optional)
+- Windows cooperation **(optional)**
   - samba
 - Bluetooth manager
-  - Blueman
-    - blueman-applet
+  - blueman
 - Clipboard manager
   - clipit
 - Power manager
   - systemd-logind
   - tlp
-  - tlp-ui
+  - tlpui-git _(aur)_
   - thermald
 - Screen locker
   - // xss-lock
   - // xautolock
   - // xscreensaver
-  - // light-locker
+  - light-locker
 - Screen shooter
   - scrot
   - flameshot
@@ -248,130 +256,160 @@ Set the tools:
   - rxvt-unicode
   - alacritty
 - File manager
-  - Thunar
-    - thunar
+  - thunar
     - thunar-archive-plugin
-      (optional)
-      (depend on Archiver)
+      **(optional)**
+      _(depend on Archiver)_
     - thunar-media-tags-plugin
     - thunar-volman
     - thunar-dropbox
-      (optional)
-      (require dropbox account)
+      **(optional)**
+      _(aur, require dropbox account)_
     - thunar-shares-plugin
-      (optional)
-      (depend on samba)
-    - thunar-vcs-plugin
+      **(optional)**
+      _(aur, depend on samba)_
+    - thunar-vcs-plugin _(aur)_
     - thunar-sendto-clamtk
-      (optional)
-      (depend on clamav/clamtk)
+      **(optional)**
+      _(aur, depend on clamav/clamtk)_
     - gvfs
+      - gvfs-smb
+      - gvfs-mtp
+      - gvfs-gphoto2
+      - gvfs-afc
     - tumbler
-    - raw-thumbnailer
+    - raw-thumbnailer _(aur)_
     - catfish
-  - ranger(from dotfiles)
-- Archiver(optional)
-  - Xarchiver
+  - ranger _(from dotfiles)_
+- Archiver **(optional)**
+  - xarchiver
 - Editor
-  - neovim(from dotfiles)
-  - mousepad(optional)
+  - neovim _(from dotfiles)_
+  - mousepad **(optional)**
 - Browser
-  - w3m(from dotfiles)
-  - vivaldi-stable
-  - brave-bin
-  - google-chrome-stable
+  - w3m _(from dotfiles)_
+  - vivaldi
+    - vivaldi-ffmepg-codecs
+  - brave-bin _(aur)_
+  - google-chrome-stable _(aur)_
   - firefox-developer-edition
+    - firefox-developer-edition-i18n-\* _(your locale)_
+    - youtube-dl
 - Mail
-  - postfix(from dotfiles)
-  - neomutt(from dotfiles)
+  - postfix _(from dotfiles)_
+  - neomutt _(from dotfiles)_
   - thunderbird
-  - birdtray
+  - birdtray _(aur)_
 - Music player
   - mpd
   - ncmpcpp
   - cantata
-  - spotify
-  - timidity++(optional)
+  - spotify _(aur)_
+  - timidity++ **(optional)**
 - Input method
   - fcitx5-im
   - fcitx5-nord
   - fcitx5-mozc
-- PDF Viewer(optional)
+- PDF Viewer **(optional)**
   - zathura
+    - zathura-ps
+    - zathura-pdf-mupdf
+    - zathura-djvu
+    - zathura-cb
     - mupdf
   - epdfview
-- Printer & scanner(optional)
-  - CUPS
-    - brother DCP-J152N printer driver (brother official)
+- Printer & scanner **(optional)**
+  - cups
+    - brother DCP-J152N printer driver _(brother official)_
     - cups-pdf
-  - brscan4
-  - brscan-skey
-- Virus scanner(optional)
+    - cups-pk-helper
+    - cups-filters
+    - system-config-printer
+    - bluez-cups
+- Virus scanner **(optional)**
   - clamav
   - clamtk
-- Writer(optional)
+- Writer **(optional)**
   - xfburn
-  - etcher-bin
+  - etcher-bin _(aur)_
+  - rpi-imager _(aur)_
 - Firewall
   - ufw
   - gufw
 - Cloud
-  - rclone(from dotfiles)
-    (optional)
-    (If you are not sure,
-    remove lines of 'exec --no-startup-id ~/.bin/rclone_mount.sh' from '.config/i3/config')
-- System admin(optional)
+  - rclone _(from dotfiles)_
+    **(optional)**
+    _(If you are not sure,
+    remove lines of 'exec --no-startup-id ~/.bin/rclone_mount.sh' from '.config/i3/config')_
+- System admin **(optional)**
   - gparted
+    - parted
   - gsmartcontrol
-  - snapper-gui-git(btrfs user only)
+    - smartmontools
+  - snapper-gui-git _(aur, btrfs user only)_
     - snapper
     - snap-pac
+    - snap-pac-grub _(aur)_
     - grub-btrfs
-- Utility(optional)
+- Utility **(optional)**
   - qtqr
 - Systemtray application
   - udiskie
   - remmina
   - osmo
-  - my-weather-indicator
+  - my-weather-indicator-git _(aur)_
   - veracrypt
   - uget
+    - uget-integrator _(aur)_
+    - uget-integrator-firefox _(aur)_
   - xpad
-  - joplin(appimage)
-  - slack
+  - joplin-appimage _(aur)_
+  - slack-desktop _(aur)_
 - Developer tool
-  - visual-studio-code-bin
+  - visual-studio-code-bin _(aur)_
   - dbeaver
   - meld
-  - wireshark
-  - filezilla(optional)
-  - docker(optional)
-    - docker-compose(deplicated)
-  - containerd(optional)
+  - wireshark-qt
+  - wireshark-cli
+  - filezilla **(optional)**
+  - docker **(optional)**
+    - docker-compose **(deplicated)**
+  - containerd **(optional)**
     - nerdctl
-  - virtualbox(optional)
+  - virtualbox **(optional)**
+    - virtualbox-guest-iso
+    - virtualbox-guest-utils
+    - vitrualbox-host-dkms _(for linux-zen users)_
+    - virtualbox-ext-oracle _(aur)_
 - Creator tool
   - krita
   - gimp
+    - gimp-plugin-gmic
+    - gimp-nufraw
+    - gimp-help-\* _(your locale)_
   - inkscape
   - blender
 - Main application
   - discord
-  - twinux(from snap)
-  - jd
+  - twinux _(from snap)_
+  - jdim-git _(aur)_
   - lutris
-  - steam
+  - steam _(multilib)_
   - speedcrunch
   - calibre
-  - mcomix
+  - mcomix _(aur)_
   - geeqie
   - xsane
-    (optional)
-    (If you haven't scanner,
-    remove a line of 'exec xsane' from '.config/i3/config')
+    **(optional)**
+    _(If you haven't scanner,
+    remove a line of 'exec xsane' from '.config/i3/config')_
+    - xsane-gimp
   - smplayer
+    - smplayer-skins
+    - smplayer-themes
+    - mpv
   - peek
-  - libreoffice
+  - libreoffice-fresh-\* _(your locale)_
 
 ## i3-gaps settings
 

@@ -61,6 +61,7 @@ dotfiles_or_dirs=(
 	.config/fontconfig
 	.config/i3
 	.config/mpd/mpd.conf
+	.config/mpv/mpv.conf
 	.config/polybar
 	.config/rofi
 	.config/systemd/user/timidity.service

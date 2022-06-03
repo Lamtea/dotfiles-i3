@@ -251,10 +251,10 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print --release exec --no-startup-id flameshot full -p ~/Pictures/screenshots
+bindsym Print --release exec --no-startup-id flameshot full
 bindsym $mod+Print --release exec --no-startup-id scrot -u ~/Pictures/screenshots/%Y-%m-%d_%H-%M-%S.png
 bindsym Shift+Print --release exec --no-startup-id flameshot gui
-bindsym Ctrl+Print --release exec --no-startup-id flameshot screen -p ~/Pictures/screenshots
+bindsym Ctrl+Print --release exec --no-startup-id flameshot screen
 bindsym $mod+Shift+Ctrl+h exec xdg-open 'https://github.com/Lamtea/dotfiles-i3'
 bindsym $mod+F1 exec thunar
 bindsym $mod+Shift+F1 exec catfish
@@ -281,19 +281,19 @@ bindsym $mod+F10 exec geeqie
 bindsym $mod+Shift+F10 exec xsane
 bindsym $mod+F11 exec smplayer
 bindsym $mod+Shift+F11 exec peek
-bindsym $mod+F12 exec libreoffice --calc
+bindsym $mod+F12 exec prime-run libreoffice --calc
 bindsym $mod+Shift+F12 exec libreoffice --writer
 bindsym $mod+Mod1+v exec code
 bindsym $mod+Mod1+c exec google-chrome-stable
-bindsym $mod+Mod1+f exec LIBVA_DRIVER_NAME=nvidia prime-run firefox-developer-edition
-bindsym $mod+Mod1+z exec LIBVA_DRIVER_NAME=nvidia prime-run firefox-developer-edition --start-debugger-server
+bindsym $mod+Mod1+f exec prime-run firefox-developer-edition
+bindsym $mod+Mod1+z exec prime-run firefox-developer-edition --start-debugger-server
 bindsym $mod+Mod1+d exec dbeaver
 bindsym $mod+Mod1+m exec meld
 bindsym $mod+Mod1+w exec wireshark
-bindsym $mod+Mod1+k exec krita
-bindsym $mod+Mod1+g exec gimp
-bindsym $mod+Mod1+i exec inkscape
-bindsym $mod+Mod1+b exec blender
+bindsym $mod+Mod1+k exec prime-run krita
+bindsym $mod+Mod1+g exec prime-run gimp
+bindsym $mod+Mod1+i exec prime-run inkscape
+bindsym $mod+Mod1+b exec prime-run blender
 
 ################################################################################################
 ## Application specific workspaces settings.

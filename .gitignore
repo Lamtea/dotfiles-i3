@@ -58,6 +58,9 @@
 ## mpd
 !/.config/mpd/
 !/.config/mpd/**/*
+## mpv
+!/.config/mpv/
+!/.config/mpv/**/*
 ## polybar
 !/.config/polybar/
 !/.config/polybar/**/*
