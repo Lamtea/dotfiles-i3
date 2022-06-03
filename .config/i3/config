@@ -285,8 +285,8 @@ bindsym $mod+F12 exec prime-run libreoffice --calc
 bindsym $mod+Shift+F12 exec libreoffice --writer
 bindsym $mod+Mod1+v exec code
 bindsym $mod+Mod1+c exec google-chrome-stable
-bindsym $mod+Mod1+f exec prime-run firefox-developer-edition
-bindsym $mod+Mod1+z exec prime-run firefox-developer-edition --start-debugger-server
+bindsym $mod+Mod1+f exec firefox-developer-edition
+bindsym $mod+Mod1+z exec firefox-developer-edition --start-debugger-server
 bindsym $mod+Mod1+d exec dbeaver
 bindsym $mod+Mod1+m exec meld
 bindsym $mod+Mod1+w exec wireshark
