@@ -14,7 +14,7 @@ create_dotfile_links() {
 	srcdir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 
 	# バックアップディレクトリ作成
-	local dotbackupdir="${HOME}/.dotbackup"
+	local dotbackupdir="${HOME}/.dotbackup-i3"
 	if [[ ! -d "${dotbackupdir}" ]]; then
 		mkdir "${dotbackupdir}"
 	fi
@@ -61,7 +61,7 @@ dotfiles_or_dirs=(
 	.config/fontconfig
 	.config/i3
 	.config/mpd/mpd.conf
-	.config/mpv/mpv.conf
+	.config/mpv
 	.config/polybar
 	.config/rofi
 	.config/systemd/user/timidity.service
