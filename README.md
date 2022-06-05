@@ -62,6 +62,7 @@ vi .bin/polybar_launch.sh
   DISPLAY_SUB="<your secondary monitor name>" # run: xrandr
 vi .config/polybar/config
   # Customize to your hardware.
+  # For Localization, see below `Localization'.
 ```
 
 ```bash
