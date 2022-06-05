@@ -255,7 +255,7 @@ bindsym Print --release exec --no-startup-id flameshot full
 bindsym $mod+Print --release exec --no-startup-id scrot -u ~/Pictures/screenshots/%Y-%m-%d_%H-%M-%S.png
 bindsym Shift+Print --release exec --no-startup-id flameshot gui
 bindsym Ctrl+Print --release exec --no-startup-id flameshot screen
-bindsym $mod+Shift+Ctrl+h exec xdg-open 'https://github.com/Lamtea/dotfiles-i3'
+bindsym $mod+Shift+Ctrl+h exec xdg-open 'https://github.com/Lamtea/dotfiles-i3/wiki/i3-gaps'
 bindsym $mod+F1 exec thunar
 bindsym $mod+Shift+F1 exec catfish
 bindsym $mod+Ctrl+F1 exec $terminal_command -e 'ranger'
