@@ -12,7 +12,7 @@ Sub display:
 
 ![overview2](https://user-images.githubusercontent.com/48638671/171595967-832cff9d-64ee-489c-ab50-dcb342b118ce.png)
 
-## How to install
+## How to Install
 
 ### Preparation
 
@@ -411,163 +411,11 @@ Set the tools:
   - peek
   - libreoffice-fresh-\* _(your locale)_
 
-## i3-gaps settings
+## i3-gaps
 
-- Mod key
-  - \<Super\>
-- Workspace layout
-  - Tiling
-- Default border pixel
-  - 1
-- Default floating border
-  - Normal
-- Hide edge borders
-  - None
-- Workspace auto back and forth
-  - Yes
-- Gaps inner
-  - 14
-- Gaps outer
-  - -2
-- Smart gaps
-  - On
-- Smart borders
-  - On
-- Fonts
-  - Noto Sans CJK JP
-  - NotoSans Nerd Font
+See: [Wiki](https://github.com/Lamtea/dotfiles-i3/wiki/i3-gaps)
 
-### Window and workspace navigation
-
-| Key                 | Motion                                                  |
-| ------------------- | ------------------------------------------------------- |
-| Mod + Mouse         | Drag floating windows                                   |
-| Mod + U             | Change border none                                      |
-| Mod + Y             | Change border 1 pixel                                   |
-| Mod + N             | Change border normal                                    |
-| Mod + Alt + Enter   | Kill focused window                                     |
-| Mod + Alt + Button3 | Kill focused window (Button3 is mouse right button)     |
-| Mod + HJKL          | Change focus                                            |
-| Mod + Shift + HJKL  | Move focused window                                     |
-| Mod + B             | Move workspace back and forth                           |
-| Mod + Shift + B     | Move container to workspace back and forth              |
-| Mod + Ctrl + H      | Change split orientation to horizontal                  |
-| Mod + Ctrl + V      | Change split orientation to Vertical                    |
-| Mod + Q             | Toggle split orientation                                |
-| Mod + F             | Toggle fullscreen mode                                  |
-| Mod + S             | Change container layout to stacked                      |
-| Mod + W             | Change container layout to tabbed                       |
-| Mod + E             | Toggle container layout                                 |
-| Mod + Shift + Space | Toggle tiling/floating of focused window                |
-| Mod + Space         | Change focus between tiling/floating windows            |
-| Mod + Shift + S     | Toggle sticky of focused window                         |
-| Mod + A             | Focus the parent container                              |
-| Mod + Shift + Minus | Move focused window to the scratchpad                   |
-| Mod + Minus         | Show the next scratchpad window or hide the focused one |
-| Mod + Shift + \[    | Switch to previous workspace                            |
-| Mod + Shift + \]    | Switch to next workspace                                |
-| Mod + 1〜8          | Switch to numbered workspace                            |
-| Mod + Ctrl + 1〜8   | Move focused container to workspace                     |
-| Mod + Shift + 1〜8  | Move to workspace with focused container                |
-
-### Resize mode navigation
-
-| Key         | Motion                |
-| ----------- | --------------------- |
-| Mod + R     | Enter the resize mode |
-| Mod + HJKL  | Resize focused window |
-| Mod + Enter | Exit the resize mode  |
-| Mod + ESC   | Exit the resize mode  |
-
-### Gaps mode navigation
-
-| Key             | Motion                     |
-| --------------- | -------------------------- |
-| Mod + Shift + G | Enter the gaps mode        |
-| O               | Enter the gaps outer mode  |
-| I               | Enter the gaps inner mode  |
-| Plus            | Gaps outer/inner +5        |
-| Minus           | Gaps outer/inner -5        |
-| 0               | Gaps outer/inner set 0     |
-| Shift + Plus    | Gaps outer/inner all +5    |
-| Shift + Minus   | Gaps outer/inner all -5    |
-| Shift + 0       | Gaps outer/inner all set 0 |
-| Enter           | Exit the gaps mode         |
-| ESC             | Exit the gaps mode         |
-
-### Menu shortcuts
-
-| Key     | Motion          |
-| ------- | --------------- |
-| Mod + D | rofi            |
-| Mod + Z | xfce4-appfinder |
-
-### System shortcuts
-
-| Key                    | Motion                                             |
-| ---------------------- | -------------------------------------------------- |
-| Mod + Shift + C        | Reload the configuration file                      |
-| Mod + Shift + R        | Restart i3                                         |
-| Mod + Shift + E        | Exit i3                                            |
-| Mod + 0                | Set shutdown, restart and locking features         |
-| Mod + 9                | Lock screen                                        |
-| Mod + Ctrl + M         | Control audio volume (exec pavucontrol)            |
-| Mod + Ctrl + W         | Control firewall (exec gufw)                       |
-| Mod + Ctrl + X         | Kill window (exec xkill)                           |
-| Mod + T                | Disable compositor (kill picom/compton)            |
-| Mod + Shift + T        | Enable compositor (exec picom/compton)             |
-| Mod + Shift + D        | Restart notify daemon (kill dunst & restart dunst) |
-| Print                  | Print full screen (exec flameshot)                 |
-| Mod + Print            | Print active window (exec scrot)                   |
-| Mod + Shift + Print    | Print active screen (exec flameshot)               |
-| Mod + Ctrl + Print     | Print selection (exec flameshot)                   |
-| Mod + Shift + Ctrl + H | Show this repository (dotfiles-i3)                 |
-
-### Application shortcuts
-
-| Key               | Motion                                |
-| ----------------- | ------------------------------------- |
-| Mod + Enter       | urxvt                                 |
-| Mod + Button3     | urxvt (Button3 is mouse right button) |
-| Mod + F1          | thunar                                |
-| Mod + Shift + F1  | catfish                               |
-| Mod + Ctrl + F1   | ranger                                |
-| Mod + F2          | vivaldi-stable                        |
-| Mod + Shift+ F2   | brave(incognito, tor)                 |
-| Mod + Ctrl + F2   | w3m                                   |
-| Mod + F3          | thunderbird                           |
-| Mod + Ctrl + F3   | neomutt                               |
-| Mod + F4          | cantata                               |
-| Mod + Shift + F4  | spotify                               |
-| Mod + Ctrl + F4   | ncmpcpp                               |
-| Mod + F5          | discord                               |
-| Mod + Shift + F5  | twinux                                |
-| Mod + F6          | jdim                                  |
-| Mod + F7          | lutris                                |
-| Mod + Shift + F7  | steam                                 |
-| Mod + F8          | speedcrunch                           |
-| Mod + Shift + F8  | alacritty                             |
-| Mod + F9          | calibre                               |
-| Mod + Shift + F9  | mcomix                                |
-| Mod + F10         | geeqie                                |
-| Mod + Shift + F10 | xsane                                 |
-| Mod + F11         | smplayer                              |
-| Mod + Shift + F11 | peek                                  |
-| Mod + F12         | libreoffice-calc                      |
-| Mod + Shift + F12 | libreoffice-writer                    |
-| Mod + Alt + C     | google-chrome-stable                  |
-| Mod + Alt + F     | firefox-developer-edition             |
-| Mod + Alt + Z     | firefox-developer-edition(debugger)   |
-| Mod + Alt + V     | visual-studio-code                    |
-| Mod + Alt + D     | dbeaver                               |
-| Mod + Alt + M     | meld                                  |
-| Mod + Alt + W     | wireshark                             |
-| Mod + Alt + K     | krita                                 |
-| Mod + Alt + G     | gimp                                  |
-| Mod + Alt + I     | inkscape                              |
-| Mod + Alt + B     | blender                               |
-
-## Shell scripts
+## Shell Scripts
 
 | Name                  | Description                   |
 | --------------------- | ----------------------------- |
