@@ -87,7 +87,7 @@ Set the tools:
     - Noto Sans CJK JP Regular
   - kvantum
     - KvAdaptaAark
-  - fcitx5
+  - fcitx5 **(optional)**
     - nord
 
 ## Depend on
@@ -148,15 +148,15 @@ Set the tools:
   - xcursor-flated
 - Font
   - noto-fonts
-  - noto-fonts-cjk
+  - noto-fonts-* **(optional)** _(your locale, cjk is default)_
   - noto-fonts-emoji
   - noto-fonts-extra
-  - ttf-ricty _(aur)_
-  - ttf-hackgen _(aur)_
+  - ttf-ricty **(optional)** _(aur, Japanese font)_
+  - ttf-hackgen **(optional)** _(aur, Japanese font)_
   - ttf-meslo-nerd-font-powerlevel10k _(aur)_
   - nerd-fonts-complete _(aur)_
   - fantasque-sans-mono
-  - ttf-monapo
+  - ttf-monapo **(optional)** _(aur, Japanese font)
   - ttf-liberation **(optional)** _(for steam)_
   - font-manager _(font viewer)_
 - Theme manager
@@ -217,7 +217,7 @@ Set the tools:
   - conky-lua-nv
     **(optional)**
     _(aur, If you are not sure,
-    remove lines of 'exec --no-startup-id conky-lua-nv' from '.config/i3/config')_
+    remove lines of 'exec --no-startup-id conky' from '.config/i3/config')_
 - Package manager
   - paru _(aur)_
   - octopi _(aur)_
@@ -307,7 +307,10 @@ Set the tools:
   - cantata
   - spotify _(aur)_
   - timidity++ **(optional)**
-- Input method
+- Input method 
+  **(optional)**
+  _(If you don't use it,
+    remove a line of 'exec --no-startup-id fcitx5' from '.config/i3/config')_
   - fcitx5-im
   - fcitx5-nord
   - fcitx5-mozc
@@ -393,7 +396,9 @@ Set the tools:
 - Main application
   - discord
   - twinux _(from snap)_
-  - jdim-git _(aur)_
+  - jdim-git
+    **(optional)**
+    _(aur, If you don't use it, remove a line of 'exec jd.sh' from '.config/i3/config')_
   - lutris
   - steam _(multilib)_
   - speedcrunch
