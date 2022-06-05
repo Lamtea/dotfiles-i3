@@ -411,6 +411,14 @@ Set the tools:
   - peek
   - libreoffice-fresh-\* _(your locale)_
 
+## Localization
+
+- Edit font settings.
+  - `Noto * CJK JP`, `ricty`, `HackGenNerd` # change your locale.
+- Edit `.config/conky/archer-conky-left.conf`.
+  - `### Datetime` section.
+    - `${time %Y年%m月%d日}$` # change your locale.
+
 ## i3-gaps
 
 See: [Wiki](https://github.com/Lamtea/dotfiles-i3/wiki/i3-gaps)
