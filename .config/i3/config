@@ -269,7 +269,7 @@ bindsym $mod+Shift+F4 exec spotify
 bindsym $mod+Ctrl+F4 exec $terminal_command -e 'ncmpcpp'
 bindsym $mod+F5 exec discord
 bindsym $mod+Shift+F5 exec env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/twinux_twinux.desktop /var/lib/snapd/snap/bin/twinux
-bindsym $mod+F6 exec /home/lamt/bin/jd.sh
+bindsym $mod+F6 exec jd.sh
 bindsym $mod+Shift+F6 exec transmission-gtk
 bindsym $mod+F7 exec lutris
 bindsym $mod+Shift+F7 exec steam

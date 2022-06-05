@@ -148,15 +148,15 @@ Set the tools:
   - xcursor-flated
 - Font
   - noto-fonts
-  - noto-fonts-* **(optional)** _(your locale, cjk is default)_
+  - noto-fonts-\* **(optional)** _(your locale, cjk is default)_
   - noto-fonts-emoji
   - noto-fonts-extra
-  - ttf-ricty **(optional)** _(aur, Japanese font)_
-  - ttf-hackgen **(optional)** _(aur, Japanese font)_
+  - ttf-ricty **(optional)** _(aur, Japanese font, urxvt use it)_
+  - ttf-hackgen **(optional)** _(aur, Japanese font, alacritty use it)_
   - ttf-meslo-nerd-font-powerlevel10k _(aur)_
   - nerd-fonts-complete _(aur)_
   - fantasque-sans-mono
-  - ttf-monapo **(optional)** _(aur, Japanese font)
+  - ttf-monapo **(optional)** \_(aur, Japanese font, jdim use it)
   - ttf-liberation **(optional)** _(for steam)_
   - font-manager _(font viewer)_
 - Theme manager
@@ -307,10 +307,10 @@ Set the tools:
   - cantata
   - spotify _(aur)_
   - timidity++ **(optional)**
-- Input method 
+- Input method
   **(optional)**
   _(If you don't use it,
-    remove a line of 'exec --no-startup-id fcitx5' from '.config/i3/config')_
+  remove a line of 'exec --no-startup-id fcitx5' from '.config/i3/config')_
   - fcitx5-im
   - fcitx5-nord
   - fcitx5-mozc
