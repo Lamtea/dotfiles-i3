@@ -19,7 +19,7 @@ Sub display:
 Complete the following:
 
 [dotfiles](https://github.com/Lamtea/dotfiles)
-(My dotfiles for command line interface on Arch linux)
+(My dotfiles for command-line interface on Arch linux)
 
 ### Installation
 
@@ -93,7 +93,7 @@ Set the tools:
 ## Depend on
 
 - [dotfiles](https://github.com/Lamtea/dotfiles)
-  _(My dotfiles for command line interface on Arch linux)_
+  _(My dotfiles for command-line interface on Arch linux)_
 - X
   - xorg-server
   - xorg-apps _(not include xorg-xbacklight, replaced acpilight)_
