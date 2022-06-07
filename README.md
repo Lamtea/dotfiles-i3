@@ -12,6 +12,22 @@ Sub display:
 
 ![overview2](https://user-images.githubusercontent.com/48638671/171595967-832cff9d-64ee-489c-ab50-dcb342b118ce.png)
 
+## My Base Configurations
+
+Only settings related to the 'Depend on' list are excerpted.
+
+| Category    | Configuration                                                   |
+| ----------- | --------------------------------------------------------------- |
+| Boot Loader | GRUB 2                                                          |
+| Kernel      | Linux Zen, Linux, Linux LTS                                     |
+| File System | Btrfs on LVM on LUKS2 (SSD, HDD)                                |
+| Graphic     | Intel UHD 630, NVIDIA GeForce MX150 (NVIDIA Optimus)            |
+| Network     | Realtek RTL8169 (LAN), Intel Wireless-AC 9560 (WiFi, Bluetooth) |
+| Monitor     | Laptop Built-in(eDP-1 connected), LG24UD58(HDMI-2 connected)    |
+| Tablet      | Wacom Intuos 4                                                  |
+| Printer     | Brother DCP-J152N                                               |
+| Scanner     | Brother DCP-J152N                                               |
+
 ## How to Install
 
 ### Preparation
