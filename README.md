@@ -32,7 +32,7 @@ Only settings related to the 'Depend on' list are excerpted.
 
 ### Preparation
 
-Complete the following:
+Please complete the following tasks:
 
 [dotfiles](https://github.com/Lamtea/dotfiles)
 (My dotfiles for command-line interface on Arch linux)
