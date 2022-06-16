@@ -387,6 +387,7 @@ Set the tools:
   - slack-desktop _(aur)_
 - Developer tool
   - visual-studio-code-bin _(aur)_
+  - android-studio _(aur)_
   - dbeaver
   - meld
   - wireshark-qt
