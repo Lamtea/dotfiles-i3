@@ -47,7 +47,7 @@ set $ws8 8
 ### Variable settings.
 #################################################################################################
 # Terminal
-#set $terminal_command prime-run alacritty
+#set $terminal_command alacritty
 set $terminal_command urxvtc
 
 # Screen locker
@@ -274,7 +274,7 @@ bindsym $mod+Shift+F6 exec transmission-gtk
 bindsym $mod+F7 exec lutris
 bindsym $mod+Shift+F7 exec steam
 bindsym $mod+F8 exec speedcrunch
-bindsym $mod+Shift+F8 exec prime-run alacritty
+bindsym $mod+Shift+F8 exec alacritty
 bindsym $mod+F9 exec calibre
 bindsym $mod+Shift+F9 exec mcomix
 bindsym $mod+F10 exec geeqie
