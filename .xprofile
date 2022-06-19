@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# flutter settings.
+export CHROME_EXECUTABLE="google-chrome-stable"
+
 # browser settings.
 export BROWSER="vivaldi-stable"
 #export BROWSER="google-chrome-stable"
