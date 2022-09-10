@@ -267,20 +267,20 @@ bindsym $mod+Ctrl+F3 exec $terminal_command -e 'neomutt'
 bindsym $mod+F4 exec cantata
 bindsym $mod+Shift+F4 exec spotify
 bindsym $mod+Ctrl+F4 exec $terminal_command -e 'ncmpcpp'
-bindsym $mod+F5 exec discord
-bindsym $mod+Shift+F5 exec env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/twinux_twinux.desktop /var/lib/snapd/snap/bin/twinux
+bindsym $mod+F5 exec alacritty
+bindsym $mod+Shift+F5 exec discord
 bindsym $mod+F6 exec jd.sh
 bindsym $mod+Shift+F6 exec transmission-gtk
 bindsym $mod+F7 exec lutris
 bindsym $mod+Shift+F7 exec steam
 bindsym $mod+F8 exec speedcrunch
-bindsym $mod+Shift+F8 exec alacritty
+bindsym $mod+Shift+F8 exec peek
 bindsym $mod+F9 exec calibre
 bindsym $mod+Shift+F9 exec mcomix
 bindsym $mod+F10 exec geeqie
 bindsym $mod+Shift+F10 exec xsane
 bindsym $mod+F11 exec smplayer
-bindsym $mod+Shift+F11 exec peek
+bindsym $mod+Shift+F11 exec vlc
 bindsym $mod+F12 exec prime-run libreoffice --calc
 bindsym $mod+Shift+F12 exec libreoffice --writer
 bindsym $mod+Mod1+v exec code
@@ -325,7 +325,6 @@ for_window [class="Xfburn"] floating enable
 for_window [class="Gufw.py"] floating enable
 for_window [class="Thunar"] floating enable
 for_window [class="Xfce4-appfinder"] floating enable sticky enable
-#for_window [class="Thunderbird"] floating enable
 for_window [class="thunderbird"] floating enable
 for_window [class="Slack"] floating enable border normal
 for_window [class="discord"] floating enable border normal
