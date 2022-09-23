@@ -83,10 +83,9 @@ vi .config/polybar/config
 
 ```bash
 sudo vi /etc/default/grub
-  GRUB_CMDLINE_LINUX_DEFAULT="apparmor=1 lsm=lockdown,yama,apparmor audit=1 nvidia-drm.modeset=1..."
+  GRUB_CMDLINE_LINUX_DEFAULT="apparmor=1 lsm=lockdown,yama,apparmor audit=1..."
 sudo update-grub
 # Add apparmor,lsm,audit to kernel parameters.
-# If you have NVIDIA Optimus, add nvidia-drm.
 ```
 
 ```bash
