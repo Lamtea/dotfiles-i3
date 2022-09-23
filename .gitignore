@@ -55,6 +55,9 @@
 ## i3
 !/.config/i3/
 !/.config/i3/**/*
+## pipewire
+!/.config/pipewire/
+!/.config/pipewire/**/*
 ## mpd
 !/.config/mpd/
 !/.config/mpd/**/*

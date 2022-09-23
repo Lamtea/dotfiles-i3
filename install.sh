@@ -49,6 +49,7 @@ dotfiles_or_dirs=(
 	.config/dunst
 	.config/fontconfig
 	.config/i3
+	.config/pipewire
 	.config/mpd/mpd.conf
 	.config/mpv
 	.config/polybar

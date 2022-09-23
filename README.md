@@ -182,6 +182,7 @@ Set the tools:
     - kvantum
 - Login manager
   - lightdm _(If you are using plymouth, use ligtdm-plymouth.service)_
+    - lightdm-gtk-greeter
     - lightdm-webkit2-greeter
     - lightdm-webkit-theme-litarvan
 - User manager
@@ -219,12 +220,17 @@ Set the tools:
   - Redshift
     - redshift
 - Audio
-  - pulseaudio
-    - pulseaudio-alsa
-    - pluseaudio-bluetooth
-    - pluseaudio-zeroconf
+  - pipewire
+    - lib32-pipewire
+    - wireplumber
+    - helvum
+    - pipewire-alsa
+    - pipewire-pulse
+    - pipewire-jack
+    - lib32-pipewire-jack
     - volumeicon
     - pavucontrol
+    - gst-plugin-pipewire
 - Geolocation
   - geoclue
 - Notify daemon
