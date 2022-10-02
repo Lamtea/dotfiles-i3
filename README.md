@@ -417,7 +417,6 @@ Set the tools:
   - blender
 - Main application
   - discord
-  - twinux _(from snap)_
   - jdim-git
     **(optional)**
     _(aur, If you don't use it, remove a line of 'exec jd.sh' from '.config/i3/config')_
