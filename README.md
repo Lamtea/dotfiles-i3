@@ -55,7 +55,7 @@ sudo systemctl enable <dependent service packages>
 #   docker(optional), containerd(optional), snapper(optional)
 # See Arch wiki for settings.
 sudo systemctl --user enable <dependent user service packages>
-# Enable mpd, timidity(optional)
+# Enable mpd
 ```
 
 ```bash
@@ -327,7 +327,6 @@ Set the tools:
   - ncmpcpp
   - cantata
   - spotify _(aur)_
-  - timidity++ **(optional)**
 - Input method
   **(optional)**
   _(If you don't use it,
