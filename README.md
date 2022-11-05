@@ -83,9 +83,9 @@ vi .config/polybar/config
 
 ```bash
 sudo vi /etc/default/grub
-  GRUB_CMDLINE_LINUX_DEFAULT="apparmor=1 lsm=lockdown,yama,apparmor audit=1..."
+  GRUB_CMDLINE_LINUX_DEFAULT="lsm=landlock,lockdown,yama,integrity,apparmor,bpf ..."
 sudo update-grub
-# Add apparmor,lsm,audit to kernel parameters.
+# Add lsm to kernel parameters.
 ```
 
 ```bash
@@ -416,9 +416,9 @@ Set the tools:
   - blender
 - Main application
   - discord
-  - jdim-git
+  - jdim
     **(optional)**
-    _(aur, If you don't use it, remove a line of 'exec jd.sh' from '.config/i3/config')_
+    _(snap, If you don't use it, remove a line of 'exec jd.sh' from '.config/i3/config')_
   - lutris
   - steam _(multilib)_
   - speedcrunch
