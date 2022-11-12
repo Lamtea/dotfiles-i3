@@ -390,6 +390,7 @@ for_window [class="Imager"] floating enable border normal
 for_window [class="jetbrains-studio" title="win0"] floating enable
 for_window [class="calibre" instance="calibre-gui"] floating enable border normal
 for_window [class="Ghidra" title="win0"] floating enable
+for_window [class="Virt-manager" ] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
