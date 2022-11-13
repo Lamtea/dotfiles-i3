@@ -52,7 +52,7 @@ sudo systemctl enable <dependent service packages>
 #   NetworkManager, wpa_supplicant, apparmor, avahi-daemon, bluetooth, hddtemp,
 #   clamav-daemon(optional), clamav-freshclam(optional), cups(optional), cups-browserd(optional),
 #   lightdm(or lightdm-plymouth), nmb(optional), smb(optional), colord(optional),
-#   docker(optional), containerd(optional), snapper(optional)
+#   docker(optional), containerd(optional), libvirtd(optional), snapper(optional)
 # See Arch wiki for settings.
 sudo systemctl --user enable <dependent user service packages>
 # Enable mpd
@@ -182,8 +182,7 @@ Set the tools:
 - Login manager
   - lightdm _(If you are using plymouth, use ligtdm-plymouth.service)_
     - lightdm-gtk-greeter
-    - lightdm-webkit2-greeter
-    - lightdm-webkit-theme-litarvan
+    - lightdm-gtk-greeter-settings
 - User manager
   - mugshot _(aur)_
 - Window manager
@@ -196,7 +195,7 @@ Set the tools:
       _(If you haven't NVIDIA Optimus,
       remove '.bin/nvidiatemp.sh' and the relevant part form '.config/polybar/config')_
     - hddtemp
-      - gnu-netcat
+      - openbsd-netcat
 - Menu
   - dockbarx _(aur)_
   - rofi
@@ -401,6 +400,12 @@ Set the tools:
     - docker-compose **(deplicated)**
   - containerd **(optional)**
     - nerdctl
+  - virt-manager **(optional)**
+    - qemu-desktop
+    - libvirt
+    - edk2-ovmf
+    - dnsmasq
+    - iptables-nft
   - virtualbox **(optional)**
     - virtualbox-guest-iso
     - virtualbox-guest-utils
