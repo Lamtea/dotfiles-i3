@@ -473,11 +473,7 @@ See: [Wiki](https://github.com/Lamtea/dotfiles-i3/wiki/i3-gaps)
 ## Development
 
 - bash
-- bashdb
 - python
 - lua
 - git
-- nodejs
-  - bash-language-server
-- vscode
 - neovim
