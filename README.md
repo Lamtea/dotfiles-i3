@@ -52,7 +52,7 @@ sudo systemctl enable <dependent service packages>
 #   NetworkManager, wpa_supplicant, apparmor, avahi-daemon, bluetooth, hddtemp,
 #   clamav-daemon(optional), clamav-freshclam(optional), cups(optional), cups-browserd(optional),
 #   lightdm(or lightdm-plymouth), nmb(optional), smb(optional), colord(optional),
-#   docker(optional), containerd(optional), libvirtd(optional), snapper(optional)
+#   libvirtd(optional), snapper(optional)
 # See Arch wiki for settings.
 sudo systemctl --user enable <dependent user service packages>
 # Enable mpd
@@ -396,17 +396,14 @@ Set the tools:
   - wireshark-qt
   - wireshark-cli
   - filezilla **(optional)**
-  - docker **(optional)**
-    - docker-compose **(deplicated)**
-  - containerd **(optional)**
-    - nerdctl
-  - virt-manager **(optional)**
+- Virtual machine **(optional)**
+  - virt-manager
     - qemu-desktop
     - libvirt
     - edk2-ovmf
     - dnsmasq
     - iptables-nft
-  - virtualbox **(optional)**
+  - virtualbox
     - virtualbox-guest-iso
     - virtualbox-guest-utils
     - vitrualbox-host-dkms _(for linux-zen users)_
