@@ -8,12 +8,6 @@
 # install script
 !/install.sh
 
-# vscode
-!/.vscode/
-!/.vscode/**/*
-!/package.json
-!/package-lock.json
-
 # readme
 !/README.md
 
@@ -38,7 +32,7 @@
 
 # config dir
 !/.config/
-# compton
+## compton
 !/.config/compton.conf
 ## alacritty
 !/.config/alacritty/
@@ -70,7 +64,3 @@
 ## rofi
 !/.config/rofi/
 !/.config/rofi/**/*
-## systemd/user/timidity.service
-!/.config/systemd/
-!/.config/systemd/user/
-!/.config/systemd/user/timidity.service
