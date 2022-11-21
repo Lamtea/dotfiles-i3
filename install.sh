@@ -54,7 +54,6 @@ dotfiles_or_dirs=(
 	.config/mpv
 	.config/polybar
 	.config/rofi
-	.config/systemd/user/timidity.service
 	.bin/arch_updates.sh
 	.bin/polybar_launch.sh
 	.bin/rofi_launch.sh
