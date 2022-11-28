@@ -21,8 +21,6 @@ XTerm*selectToClipboard: true
 *fadeColor:              black
 *pointerColorBackground: #2b2c2b
 *pointerColorForeground: #16a085
-
-! Dracula theme
 *.foreground:   #F8F8F2
 *.background:   #282A36
 *.cursorColor:  #C6C8D1
@@ -43,11 +41,12 @@ XTerm*selectToClipboard: true
 *.color7:       #BFBFBF
 *.color15:      #E6E6E6
 
+! Cursor
 Xcursor.theme: FlatbedCursors-Black
 Xcursor.size:  0
 
 ! urxvt
-URxvt.font:                 xft:Ricty:size=14,xft:MesloLGS NF:size=14,xft:Monospace:size=14
+URxvt.font:                 xft:Ricty:size=14,xft:MesloLGS NF:size=14,xft:MesloLGS Nerd Font:size=14,xft:Monospace:size=14
 URxvt.depth:                32
 URxvt.background:           [90]#080a16
 URxvt*scrollBar:            false
@@ -72,4 +71,3 @@ URxvt*colorBD:                      #00b8e0
 URxvt*colorIT:                      #e026a3
 URxvt*colorUL:                      #29b582
 URxvt*colorRV:                      #aa497e
-
