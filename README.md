@@ -274,7 +274,7 @@ Set the tools:
   - scrot
   - flameshot
 - Terminal
-  - rxvt-unicode
+  - rxvt-unicode-truecolor-wide-glyphs _(aur)_
   - alacritty
 - File manager
   - thunar
