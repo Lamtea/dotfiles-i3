@@ -69,6 +69,9 @@ dotfiles_or_dirs=(
 
 create_dotfile_links "${dotfiles_or_dirs[@]}"
 
+## mpd
+mkdir -p ~/.config/mpd/playlists
+
 ## icon
 ln -snf ~/.face ~/.icon
 ln -snf ~/.face ~/.face.icon
