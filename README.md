@@ -1,6 +1,6 @@
 # dotfiles-i3
 
-My dotfiles for i3-gaps on Arch linux on laptop.
+My dotfiles for i3 on Arch linux on laptop.
 
 ## Overview
 
@@ -186,7 +186,7 @@ Set the tools:
 - User manager
   - mugshot _(aur)_
 - Window manager
-  - i3-gaps
+  - i3-wm
 - Status bar
   - polybar
     - procps-ng
@@ -447,9 +447,9 @@ Set the tools:
   - `### Datetime` section.
     - `${time %Y年%m月%d日}$` # change your locale.
 
-## i3-gaps
+## i3
 
-See: [Wiki](https://github.com/Lamtea/dotfiles-i3/wiki/i3-gaps)
+See: [Wiki](https://github.com/Lamtea/dotfiles-i3/wiki/i3)
 
 ## Shell Scripts
 
