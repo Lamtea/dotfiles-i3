@@ -224,8 +224,8 @@ mode "resize" {
 bindsym $mod+9 exec --no-startup-id $locker_command
 
 # start a terminal
-bindsym $mod+Return exec $terminal_command
-bindsym --whole-window $mod+Button3 exec $terminal_command
+bindsym $mod+Return exec --no-startup-id $terminal_command
+bindsym --whole-window $mod+Button3 exec --no-startup-id $terminal_command
 
 # kill focused window
 bindsym $mod+Mod1+Return kill
@@ -238,7 +238,7 @@ bindsym $mod+d exec --no-startup-id ~/.bin/rofi_launch.sh
 bindsym $mod+z exec --no-startup-id xfce4-appfinder
 
 # mixer
-bindsym $mod+Ctrl+m exec pavucontrol
+bindsym $mod+Ctrl+m exec --no-startup-id pavucontrol
 
 # Backlight Control
 bindsym XF86MoBrightnessUp exec xbacklight -inc 10
@@ -257,23 +257,23 @@ bindsym Ctrl+Print --release exec --no-startup-id flameshot screen
 bindsym $mod+Shift+Ctrl+h exec xdg-open 'https://github.com/Lamtea/dotfiles-i3/wiki/i3'
 bindsym $mod+F1 exec thunar
 bindsym $mod+Shift+F1 exec catfish
-bindsym $mod+Ctrl+F1 exec $terminal_command -e 'ranger'
+bindsym $mod+Ctrl+F1 exec --no-startup-id $terminal_command -e 'ranger'
 bindsym $mod+F2 exec vivaldi-stable
-bindsym $mod+Shift+F2 exec brave --incognito --tor
-bindsym $mod+Ctrl+F2 exec $terminal_command -e 'w3m https://google.com'
+bindsym $mod+Shift+F2 exec brave --incognito
+bindsym $mod+Ctrl+F2 exec --no-startup-id $terminal_command -e 'w3m https://google.com'
 bindsym $mod+F3 exec thunderbird
-bindsym $mod+Ctrl+F3 exec $terminal_command -e 'neomutt'
+bindsym $mod+Ctrl+F3 exec --no-startup-id $terminal_command -e 'neomutt'
 bindsym $mod+F4 exec cantata
 bindsym $mod+Shift+F4 exec spotify
-bindsym $mod+Ctrl+F4 exec $terminal_command -e 'ncmpcpp'
-bindsym $mod+F5 exec alacritty
+bindsym $mod+Ctrl+F4 exec --no-startup-id $terminal_command -e 'ncmpcpp'
+bindsym $mod+F5 exec --no-startup-id alacritty
 bindsym $mod+Shift+F5 exec discord
 bindsym $mod+F6 exec jd.sh
 bindsym $mod+Shift+F6 exec transmission-gtk
 bindsym $mod+F7 exec lutris
 bindsym $mod+Shift+F7 exec steam
-bindsym $mod+F8 exec speedcrunch
-bindsym $mod+Shift+F8 exec peek
+bindsym $mod+F8 exec --no-startup-id speedcrunch
+bindsym $mod+Shift+F8 exec --no-startup-id peek
 bindsym $mod+F9 exec calibre
 bindsym $mod+Shift+F9 exec mcomix
 bindsym $mod+F10 exec geeqie
@@ -309,54 +309,54 @@ bindsym $mod+Mod1+b exec prime-run blender
 ## Window floationg mode settings.
 ################################################################################################
 # Open specific applications in floating mode
-for_window [class="Galculator"] floating enable border normal
-for_window [class="GParted"] floating enable border normal
-for_window [title="i3_help"] floating enable sticky enable border normal
-for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="Galculator"] floating enable
+for_window [class="GParted"] floating enable
+for_window [title="i3_help"] floating enable sticky enable
+for_window [class="Lxappearance"] floating enable sticky enable
+for_window [class="Nitrogen"] floating enable sticky enable
 for_window [class="octopi"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="helvum"] floating enable
-for_window [class="qt5ct"] floating enable sticky enable border normal
-for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
-for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="Skype"] floating enable border normal
-for_window [class="(?i)virtualbox"] floating enable border normal
+for_window [class="qt5ct"] floating enable sticky enable
+for_window [class="Qtconfig-qt4"] floating enable sticky enable
+for_window [class="(?i)System-config-printer.py"] floating enable
+for_window [class="Skype"] floating enable
+for_window [class="(?i)virtualbox"] floating enable
 for_window [class="Xfburn"] floating enable
 for_window [class="Gufw.py"] floating enable
 for_window [class="Thunar"] floating enable
 for_window [class="Xfce4-appfinder"] floating enable sticky enable
 for_window [class="thunderbird"] floating enable
-for_window [class="Slack"] floating enable border normal
-for_window [class="discord"] floating enable border normal
+for_window [class="Slack"] floating enable
+for_window [class="discord"] floating enable
 for_window [class="Blueman-manager"] floating enable
 for_window [class="cantata"] floating enable
 for_window [class="Lutris"] floating enable
 for_window [class="Steam"] floating enable
 for_window [class="SpeedCrunch"] floating enable
-for_window [class="Geeqie"] floating enable border normal
-for_window [class="Catfish"] floating enable border normal
+for_window [class="Geeqie"] floating enable
+for_window [class="Catfish"] floating enable
 for_window [class="Clamtk"] floating enable
 for_window [class="Meld"] floating enable
-for_window [class="qtqr"] floating enable border normal
-for_window [class="org.remmina.Remmina"] floating enable border normal
+for_window [class="qtqr"] floating enable
+for_window [class="org.remmina.Remmina"] floating enable
 for_window [class="Snapper-gui"] floating enable
 for_window [class="Arandr"] floating enable
-for_window [class="Avahi-discover"] floating enable border normal
-for_window [class="fcitx5-config-*"] floating enable border normal
-for_window [class="Kvantum Manager"] floating enable border normal
-for_window [class="Nvidia-settings"] floating enable border normal
-for_window [class="Xsane"] floating enable border normal
+for_window [class="Avahi-discover"] floating enable
+for_window [class="fcitx5-config-*"] floating enable
+for_window [class="Kvantum Manager"] floating enable
+for_window [class="Nvidia-settings"] floating enable
+for_window [class="Xsane"] floating enable
 for_window [class="Mousepad"] floating enable
-for_window [class="Zathura"] floating enable border normal
-for_window [class="Epdfview"] floating enable border normal
+for_window [class="Zathura"] floating enable
+for_window [class="Epdfview"] floating enable
 for_window [class="Xarchiver"] floating enable
-for_window [class="Hardinfo"] floating enable border normal
-for_window [class="fontforge"] floating enable border normal
+for_window [class="Hardinfo"] floating enable
+for_window [class="fontforge"] floating enable
 for_window [class="Gsmartcontrol"] floating enable
-for_window [title="lstopo"] floating enable border normal
-for_window [class="jetbrains-toolbox"] floating enable border normal
-for_window [class="Gtk-lshw"] floating enable border normal
+for_window [title="lstopo"] floating enable
+for_window [class="jetbrains-toolbox"] floating enable
+for_window [class="Gtk-lshw"] floating enable
 for_window [class="Psensor"] floating enable
 for_window [class="QDBusViewer"] floating enable
 for_window [class="qv4l2"] floating enable
@@ -366,30 +366,30 @@ for_window [class="Tlp-UI"] floating enable
 for_window [class="Uget-gtk"] floating enable
 for_window [class="Seahorse"] floating enable
 for_window [class="Xfce4-dict"] floating enable
-for_window [class="Joplin"] floating enable border normal
-for_window [class="xpad"] floating enable border normal
-for_window [class="Xscreensaver-demo"] floating enable border normal
-for_window [class="flameshot"] floating enable border normal
-for_window [class="qvidcap"] floating enable border normal
+for_window [class="Joplin"] floating enable
+for_window [class="xpad"] floating enable
+for_window [class="Xscreensaver-demo"] floating enable
+for_window [class="flameshot"] floating enable
+for_window [class="qvidcap"] floating enable
 for_window [class="Osmo"] floating enable
-for_window [class="Displaycal-3dlut-maker"] floating enable border normal
-for_window [class="Displaycal-curve-viewer"] floating enable border normal
-for_window [class="Displaycal"] floating enable border normal
+for_window [class="Displaycal-3dlut-maker"] floating enable
+for_window [class="Displaycal-curve-viewer"] floating enable
+for_window [class="Displaycal"] floating enable
 for_window [class="Gtkhash"] floating enable
-for_window [class="Electron"] floating enable border normal
+for_window [class="Electron"] floating enable
 for_window [class="Parole"] floating enable
 #for_window [class="smplayer"] floating enable
 for_window [class="vlc"] floating enable
 for_window [class="obs"] floating enable
 for_window [class="QDirStat"] floating enable
 for_window [class="Ristretto"] floating enable
-for_window [class="Nufraw"] floating enable border normal
-for_window [class="kbd-layout-viewer"] floating enable border normal
-for_window [class="Xfce4-appfinder"] floating enable border normal
+for_window [class="Nufraw"] floating enable
+for_window [class="kbd-layout-viewer"] floating enable
+for_window [class="Xfce4-appfinder"] floating enable
 for_window [class="Dockx"] floating enable
-for_window [class="Imager"] floating enable border normal
+for_window [class="Imager"] floating enable
 for_window [class="jetbrains-studio" title="win0"] floating enable
-for_window [class="calibre" instance="calibre-gui"] floating enable border normal
+for_window [class="calibre" instance="calibre-gui"] floating enable
 for_window [class="Ghidra" title="win0"] floating enable
 for_window [class="Virt-manager" ] floating enable
 

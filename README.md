@@ -40,52 +40,58 @@ Please complete the following tasks:
 ### Installation
 
 ```bash
-paru -S <dependent packages>
 # Options can use other packages or be ignored(see below 'Depend on' list).
 # You may have to edit with the file by changing options.
 # See Arch wiki for settings.
+paru -S <dependent packages>
 ```
 
 ```bash
-sudo systemctl enable <dependent service packages>
 # Set and enable the required services.
 #   NetworkManager, wpa_supplicant, apparmor, avahi-daemon, bluetooth, hddtemp,
 #   clamav-daemon(optional), clamav-freshclam(optional), cups(optional), cups-browserd(optional),
 #   lightdm(or lightdm-plymouth), nmb(optional), smb(optional), colord(optional),
 #   libvirtd(optional), snapper(optional)
 # See Arch wiki for settings.
+sudo systemctl enable <dependent service packages>
+```
+
+```bash
+# Set and enable the required user services.
+#  mpd
+# See Arch wiki for settings.
 sudo systemctl --user enable <dependent user service packages>
-# Enable mpd
 ```
 
 ```bash
 cd ~
 git clone https://github.com/Lamtea/dotfiles-i3.git .dotfiles-i3
-```
-
-```bash
 cd .dotfiles-i3
 ./install.sh
 ```
 
 ```bash
-cd ~
 cp <your favorite icon> .face
-vi .bin/detect_display.sh
-  PRIMARY_NAME="<your primary monitor name>" # run: xrandr
-vi .bin/polybar_launch.sh
-  DISPLAY_MAIN="<your primary monitor name>" # run: xrandr
-  DISPLAY_SUB="<your secondary monitor name>" # run: xrandr
-vi .config/polybar/config
-  # Customize to your hardware.
-  # For Localization, see below `Localization'.
 ```
 
 ```bash
+# Customize to your hardware.
+# For Localization, see below `Localization'.
+vi .bin/detect_display.sh
+  PRIMARY_NAME="<your primary monitor>"
+vi .bin/polybar_launch.sh
+  DISPLAY_MAIN="<your primary monitor>"
+  DISPLAY_SUB="<your secondary monitor>"
+vi .config/polybar/config
+vi .config/conky/archer-conky-left.conf
+vi .config/conky/archer-conky-right.conf
+```
+
+```bash
+# Add lsm to kernel parameters for apparmor.
 sudo vi /etc/default/grub
   GRUB_CMDLINE_LINUX_DEFAULT="lsm=landlock,lockdown,yama,integrity,apparmor,bpf ..."
 sudo update-grub
-# Add lsm to kernel parameters.
 ```
 
 ```bash
@@ -94,14 +100,14 @@ sudo systemctl reboot
 
 Set the tools:
 
-- theme:
+- Themes:
   - lxappearrance-gtk3
     - Adapta-Nokto
     - Papirus-Dark
     - Flatbed Cursors original Black
     - Noto Sans CJK JP Regular
   - kvantum
-    - KvAdaptaAark
+    - KvAdaptaDark
   - fcitx5 **(optional)**
     - nord
 
@@ -451,7 +457,7 @@ Set the tools:
 
 See: [Wiki](https://github.com/Lamtea/dotfiles-i3/wiki/i3)
 
-## Shell Scripts
+## Scripts
 
 | Name                  | Description                   |
 | --------------------- | ----------------------------- |
@@ -467,7 +473,7 @@ See: [Wiki](https://github.com/Lamtea/dotfiles-i3/wiki/i3)
 | open_with_linux.py    | script for firefox extension. |
 | get-windowclass-i3.sh | get window class name for i3. |
 
-## Development
+## Develop Environment
 
 - bash
 - python
