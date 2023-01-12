@@ -275,7 +275,7 @@ Set the tools:
   - // xss-lock
   - // xautolock
   - // xscreensaver
-  - light-locker
+  - // light-locker
 - Screen shooter
   - scrot
   - flameshot

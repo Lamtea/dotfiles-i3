@@ -51,7 +51,7 @@ set $ws8 8
 set $terminal_command urxvtc
 
 # Screen locker
-set $locker_command light-locker-command -l
+#set $locker_command light-locker-command -l
 #set $locker_command xscreensaver-command -l
 
 ################################################################################################
@@ -221,7 +221,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id $locker_command
+#bindsym $mod+9 exec --no-startup-id $locker_command
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id $terminal_command
