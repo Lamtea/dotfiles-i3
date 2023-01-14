@@ -388,7 +388,7 @@ for_window [class="kbd-layout-viewer"] floating enable
 for_window [class="Xfce4-appfinder"] floating enable
 for_window [class="Dockx"] floating enable
 for_window [class="Imager"] floating enable
-for_window [class="jetbrains-studio" title="win0"] floating enable
+for_window [class="jetbrains-studio" title="splash"] floating enable
 for_window [class="calibre" instance="calibre-gui"] floating enable
 for_window [class="Ghidra" title="win0"] floating enable
 for_window [class="Virt-manager" ] floating enable
