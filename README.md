@@ -166,7 +166,7 @@ Set the tools:
 - Icon
   - papirus-icon-theme
 - Cursor
-  - xcursor-flated
+  - xcursor-flatbed
 - Font
   - noto-fonts
   - noto-fonts-\* **(optional)** _(your locale, cjk is default)_
