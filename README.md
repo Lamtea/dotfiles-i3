@@ -175,7 +175,7 @@ Set the tools:
   - ttf-ricty **(optional)** _(aur, Japanese font, urxvt use it)_
   - ttf-hackgen **(optional)** _(aur, Japanese font, alacritty use it)_
   - ttf-meslo-nerd-font-powerlevel10k _(aur)_
-  - nerd-fonts-complete _(aur)_
+  - nerd-fonts-git _(aur)_
   - fantasque-sans-mono
   - ttf-monapo **(optional)** \_(aur, Japanese font, jdim use it)
   - ttf-liberation **(optional)** _(for steam)_
