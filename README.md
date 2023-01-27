@@ -206,7 +206,6 @@ Set the tools:
   - dockbarx _(aur)_
   - rofi
     - rofi-calc
-    - rofi-dmenu _(aur)_
   - xfce4-appfinder
 - Compositor
   - picom/compton
