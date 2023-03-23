@@ -379,6 +379,7 @@ Set the tools:
     - snap-pac
     - snap-pac-grub _(aur)_
     - grub-btrfs
+  - btrfs-assistant _(aur, btrfs user only)_
 - Utility **(optional)**
   - qtqr
 - Systemtray application
