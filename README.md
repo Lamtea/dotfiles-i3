@@ -50,7 +50,7 @@ paru -S <dependent packages>
 # Set and enable the required services.
 #   NetworkManager, wpa_supplicant, apparmor, avahi-daemon, bluetooth, hddtemp,
 #   clamav-daemon(optional), clamav-freshclam(optional), cups(optional), cups-browserd(optional),
-#   lightdm(or lightdm-plymouth), nmb(optional), smb(optional), colord(optional),
+#   lightdm, nmb(optional), smb(optional), colord(optional),
 #   libvirtd(optional), snapper(optional)
 # See Arch wiki for settings.
 sudo systemctl enable <dependent service packages>
@@ -186,7 +186,7 @@ Set the tools:
   - Qt
     - kvantum
 - Login manager
-  - lightdm _(If you are using plymouth, use ligtdm-plymouth.service)_
+  - lightdm
     - lightdm-gtk-greeter
     - lightdm-gtk-greeter-settings
 - User manager
