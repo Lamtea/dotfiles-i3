@@ -22,7 +22,7 @@ line-size = 2
 background = ${colors.bg}
 foreground = ${colors.fg}
 font-0 = "Fantasque Sans Mono:size=10"
-font-1 = "NotoSansMono Nerd Font:size=12"
+font-1 = "NotoSansM Nerd Font:size=12"
 font-2 = "Noto Sans Mono CJK JP:size=10"
 font-3 = "Monospace:size=10"
 cursor-click = pointer
@@ -42,7 +42,7 @@ line-size = 3
 background = ${colors.bg}
 foreground = ${colors.fg}
 font-0 = "Fantasque Sans Mono:size=9"
-font-1 = "NotoSansMono Nerd Font:size=12"
+font-1 = "NotoSansM Nerd Font:size=12"
 font-2 = "Noto Sans Mono CJK JP:size=9"
 font-3 = "Monospace:size=9"
 cursor-click = pointer
@@ -53,7 +53,7 @@ modules-right = mpd volume filesystem-boot filesystem-root filesystem-home date
 ;===== Module Settings =====
 [module/powermenu]
 type = custom/text
-content = 襤
+content = 
 content-padding = 1
 content-foreground = ${colors.fg}
 content-underline = ${colors.adapta-cyan}
@@ -167,7 +167,7 @@ label-empty = "No title"
 [module/cpu-value]
 type = internal/cpu
 interval = 1
-format-prefix = " "
+format-prefix = " "
 format-underline = ${colors.adapta-cyan}
 format-padding = 1
 label = %percentage:2%%
@@ -175,7 +175,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 1
-format-prefix = " "
+format-prefix = "󰍛 "
 format-underline = ${colors.adapta-cyan}
 format-margin = ${margin.for-modules}
 format-padding = 1
@@ -188,15 +188,15 @@ interval = 1
 format-connected = <label-connected>
 format-connected-underline = ${colors.adapta-cyan}
 format-connected-padding = 1
-label-connected = " :  %upspeed:9%  %downspeed:9%"
+label-connected = "󰈀 :  %upspeed:9%  %downspeed:9%"
 format-disconnected = <label-disconnected>
 format-disconnected-padding = ${self.format-connected-padding}
 format-disconnected-underline = ${colors.adapta-grey}
-label-disconnected = " : 睊"
+label-disconnected = "󰈀 : 󰌙 "
 format-packetloss = <animation-packetloss> <label-packetloss>
 format-packetloss-padding = ${self.format-connected-padding}
 format-packetloss-underline = ${colors.adapta-yellow}
-label-packetloss = " :  %upspeed:9%  %downspeed:9%"
+label-packetloss = "󰈀 :  %upspeed:9%  %downspeed:9%"
 animation-packetloss-0 = ⚠
 animation-packetloss-0-foreground = ${colors.adapta-yellow}
 animation-packetloss-1 = 
@@ -214,7 +214,7 @@ label-connected = " :  %upspeed:9%  %downspeed:9%"
 format-disconnected = <label-disconnected>
 format-disconnected-padding = ${self.format-connected-padding}
 format-disconnected-underline = ${colors.adapta-grey}
-label-disconnected = " : 睊"
+label-disconnected = " : 󰖪 "
 format-packetloss = <animation-packetloss> <label-packetloss>
 format-packetloss-padding = ${self.format-connected-padding}
 format-packetloss-underline = ${colors.adapta-yellow}
@@ -240,35 +240,38 @@ label-charging = %percentage%%
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${colors.adapta-yellow}
 format-discharging-padding = ${self.format-charging-padding}
-label-discharging = %percentage:2%%
+label-discharging = %percentage%%
 format-full = <label-full>
 format-full-underline = ${colors.adapta-cyan}
 format-full-padding = ${self.format-charging-padding}
-format-full-prefix = " "
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
-ramp-capacity-5 = 
-ramp-capacity-6 = 
-ramp-capacity-7 = 
-ramp-capacity-8 = 
-ramp-capacity-9 = 
+format-full-prefix = "󰁹"
+ramp-capacity-0 = 󰁺
+ramp-capacity-1 = 󰁻
+ramp-capacity-2 = 󰁼
+ramp-capacity-3 = 󰁽
+ramp-capacity-4 = 󰁾
+ramp-capacity-5 = 󰁿
+ramp-capacity-6 = 󰂀
+ramp-capacity-7 = 󰂁
+ramp-capacity-8 = 󰂂
+ramp-capacity-9 = 󰁹
 ramp-capacity-0-foreground = ${colors.adapta-red}
 ramp-capacity-1-foreground = ${colors.adapta-red}
 ramp-capacity-2-foreground = ${colors.adapta-red}
-ramp-capacity-3-foreground = ${colors.adapta-red}
+ramp-capacity-3-foreground = ${colors.adapta-yellow}
 ramp-capacity-4-foreground = ${colors.adapta-yellow}
 ramp-capacity-5-foreground = ${colors.adapta-yellow}
 ramp-capacity-foreground   = ${colors.fg}
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
-animation-charging-5 = 
-animation-charging-6 = 
+animation-charging-0 = 󰢜
+animation-charging-1 = 󰂆
+animation-charging-2 = 󰂇
+animation-charging-3 = 󰂈
+animation-charging-4 = 󰢝
+animation-charging-5 = 󰂉
+animation-charging-6 = 󰢞
+animation-charging-7 = 󰂊
+animation-charging-8 = 󰂋
+animation-charging-9 = 󰂅
 animation-charging-foreground = ${colors.fg}
 animation-charging-framerate = 750
 
@@ -352,8 +355,8 @@ type = internal/pulseaudio
 format-volume = <label-volume> <bar-volume>
 format-volume-underline = ${colors.adapta-cyan}
 format-volume-padding = 1
-label-volume = 墳
-label-muted = 婢
+label-volume = 󰕾
+label-muted = 󰖁
 label-muted-underline = ${colors.adapta-cyan}
 label-muted-padding = ${self.format-volume-padding}
 bar-volume-width = 8
