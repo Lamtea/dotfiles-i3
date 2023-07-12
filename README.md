@@ -206,7 +206,7 @@ Set the tools:
     - hddtemp
       - openbsd-netcat
 - Menu
-  - dockbarx _(aur)_
+  - dockbarx-git _(aur)_
   - rofi
     - rofi-calc
   - xfce4-appfinder
