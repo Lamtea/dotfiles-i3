@@ -347,8 +347,8 @@ Set the tools:
     - zathura-pdf-mupdf
     - zathura-djvu
     - zathura-cb
-    - mupdf
-  - epdfview-gtk3
+    - mupdf-gl
+  - evince
 - Printer & scanner **(optional)**
   - cups
     - brother DCP-J152N printer driver _(brother official)_
