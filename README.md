@@ -176,7 +176,7 @@ Set the tools:
   - ttf-hackgen **(optional)** _(aur, Japanese font, alacritty use it)_
   - ttf-meslo-nerd-font-powerlevel10k _(aur)_
   - fantasque-sans-mono
-  - ttf-monapo **(optional)** \_(aur, Japanese font, jdim use it)
+  - ttf-monapo **(optional)** _(aur, Japanese font, jdim use it)_
   - ttf-liberation **(optional)** _(for steam)_
   - ttf-noto-nerd
   - ttf-meslo-nerd
