@@ -76,7 +76,7 @@ cp <your favorite icon> .face
 
 ```bash
 # Customize to your hardware.
-# For Localization, see below `Localization'.
+# For Localization, see below 'Localization'.
 vi .bin/detect_display.sh
   PRIMARY_NAME="<your primary monitor>"
 vi .bin/polybar_launch.sh
@@ -121,14 +121,14 @@ Set the tools:
   - xf86-input-wacom
     **(optional)**
     _(If you haven't wacom tablet,
-    remove '.bin/setup_wacom.sh' and the relevant part from '.xprofile')_
+    remove `.bin/setup_wacom.sh` and the relevant part from `.xprofile`)_
   - srandrd _(aur)_
   - numlockx
 - Graphics
   **(optional)**
   _(If you haven't NVIDIA Optimus,
-  remove 'prime-run' from '.config/i3/config',
-  and remove or edit '.config/mpv/mpv.conf')_
+  remove `prime-run` from `.config/i3/config`,
+  and remove or edit `.config/mpv/mpv.conf`)_
   - GPU
     - Intel _(UHD 630)_
     - NVIDIA Optimus _(GeForce MX150)_
@@ -202,7 +202,7 @@ Set the tools:
     - nvidia-smi
       **(optional)**
       _(If you haven't NVIDIA Optimus,
-      remove '.bin/nvidiatemp.sh' and the relevant part form '.config/polybar/config')_
+      remove `.bin/nvidiatemp.sh` and the relevant part form `.config/polybar/config`)_
     - hddtemp
       - openbsd-netcat
 - Menu
@@ -218,7 +218,7 @@ Set the tools:
   - Display CAL
     **(optional)**
     _(If you haven't monitor for creators,
-    remove a line of 'exec --no-startup-id displaycal-apply-profiles' from '.config/i3/config')_
+    remove a line of `exec --no-startup-id displaycal-apply-profiles` from `.config/i3/config`)_
     - displaycal-apply-profiles
     - colord
       - colord-gtk
@@ -245,7 +245,7 @@ Set the tools:
   - conky-lua-nv
     **(optional)**
     _(aur, If you are not sure,
-    remove lines of 'exec --no-startup-id conky' from '.config/i3/config')_
+    remove lines of `exec --no-startup-id conky` from `.config/i3/config`)_
 - Package manager
   - paru _(aur)_
   - octopi _(aur)_
@@ -337,7 +337,7 @@ Set the tools:
 - Input method
   **(optional)**
   _(If you don't use it,
-  remove a line of 'exec --no-startup-id fcitx5' from '.config/i3/config')_
+  remove a line of `exec --no-startup-id fcitx5` from `.config/i3/config`)_
   - fcitx5-im
   - fcitx5-nord
   - fcitx5-mozc
@@ -371,7 +371,7 @@ Set the tools:
   - rclone _(from dotfiles)_
     **(optional)**
     _(If you are not sure,
-    remove lines of 'exec --no-startup-id ~/.bin/rclone_mount.sh' from '.config/i3/config')_
+    remove lines of `exec --no-startup-id ~/.bin/rclone_mount.sh` from `.config/i3/config`)_
 - System admin **(optional)**
   - gparted
     - parted
@@ -429,7 +429,7 @@ Set the tools:
   - discord
   - jdim
     **(optional)**
-    _(snap, If you don't use it, remove a line of 'exec jd.sh' from '.config/i3/config')_
+    _(snap, If you don't use it, remove a line of `exec jd.sh` from `.config/i3/config`)_
   - lutris
   - steam _(multilib)_
   - speedcrunch
@@ -439,7 +439,7 @@ Set the tools:
   - xsane
     **(optional)**
     _(If you haven't scanner,
-    remove a line of 'exec xsane' from '.config/i3/config')_
+    remove a line of `exec xsane` from `.config/i3/config`)_
     - xsane-gimp
   - smplayer
     - smplayer-skins
