@@ -247,9 +247,9 @@ Set the tools:
     _(aur, If you are not sure,
     remove lines of `exec --no-startup-id conky` from `.config/i3/config`)_
 - Package manager
-  - paru _(aur)_
   - octopi _(aur)_
   - snapd _(aur)_
+  - yay _(aur, from dotfiles)_
 - Linux security module
   - apparmor
 - Policy kit
