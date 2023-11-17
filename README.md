@@ -43,7 +43,7 @@ Please complete the following tasks:
 # Options can use other packages or be ignored(see below 'Depend on' list).
 # You may have to edit with the file by changing options.
 # See Arch wiki for settings.
-paru -S <dependent packages>
+yay -S <dependent packages>
 ```
 
 ```bash
@@ -373,6 +373,9 @@ Set the tools:
     _(If you are not sure,
     remove lines of `exec --no-startup-id ~/.bin/rclone_mount.sh` from `.config/i3/config`)_
 - System admin **(optional)**
+  - gnome-firmware
+    - fwupd
+    - fwupd-efi
   - gparted
     - parted
   - gsmartcontrol
