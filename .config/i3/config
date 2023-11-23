@@ -19,7 +19,7 @@ hide_edge_borders none
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Noto Sans CJK JP,NotoSans Nerd Font,Sans Serif 9
+font pango:Noto Sans CJK JP,NotoSans NF,Sans Serif 9
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
