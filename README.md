@@ -260,6 +260,8 @@ Set the tools:
   - seahorse
 - Network manager
   - networkmanager
+    - networkmanager-openvpn
+    - wireguard-tools
 - mDNS
   - avahi
 - Windows cooperation **(optional)**
