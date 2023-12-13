@@ -99,6 +99,7 @@ exec --no-startup-id sleep 9; osmo
 exec --no-startup-id sleep 9; my-weather-indicator
 exec --no-startup-id sleep 12; /opt/appimages/Joplin.AppImage
 exec --no-startup-id sleep 12; slack --startup
+exec --no-startup-id sleep 12; /usr/local/bin/QNAP/QsyncClient/Qsync.sh
 
 ################################################################################################
 ## Bindsym settings.
@@ -392,6 +393,7 @@ for_window [class="jetbrains-studio" title="splash"] floating enable
 for_window [class="calibre" instance="calibre-gui"] floating enable
 for_window [class="Ghidra" title="win0"] floating enable
 for_window [class="Virt-manager" ] floating enable
+for_window [class="Qsync" ] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus

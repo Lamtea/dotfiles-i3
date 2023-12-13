@@ -402,6 +402,10 @@ Set the tools:
   - xpad
   - joplin-appimage _(aur)_
   - slack-desktop _(aur)_
+  - qsync
+    **(optional)**
+    _(If you haven't qnap nas,
+    remove a line of `exec --no-startup-id /usr/local/bin/QNAP/QsyncClient/Qsync.sh` from `.config/i3/config`)_
 - Developer tool
   - visual-studio-code-bin _(aur)_
   - android-studio _(aur)_
