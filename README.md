@@ -273,7 +273,7 @@ Set the tools:
 - Power manager
   - systemd-logind
   - tlp
-  - tlpui-git _(aur)_
+  - tlpui _(aur)_
   - thermald
 - Screen locker
   - // xss-lock
