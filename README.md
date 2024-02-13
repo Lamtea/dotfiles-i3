@@ -411,6 +411,7 @@ Set the tools:
   - android-studio _(aur)_
   - dbeaver
   - meld
+  - postman-bin _(aur)_
   - wireshark-qt
   - wireshark-cli
   - filezilla **(optional)**
