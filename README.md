@@ -300,9 +300,6 @@ Set the tools:
       **(optional)**
       _(aur, depend on samba)_
     - thunar-vcs-plugin _(aur)_
-    - thunar-sendto-clamtk
-      **(optional)**
-      _(aur, depend on clamav/clamtk)_
     - gvfs
       - gvfs-smb
       - gvfs-mtp
