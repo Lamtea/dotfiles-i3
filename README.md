@@ -272,8 +272,6 @@ Set the tools:
   - clipit
 - Power manager
   - systemd-logind
-  - tlp
-  - tlpui _(aur)_
   - thermald
 - Screen locker
   - // xss-lock
