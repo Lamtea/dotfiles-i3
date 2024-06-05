@@ -73,7 +73,6 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton -b
 exec --no-startup-id numlockx on
 exec_always --no-startup-id ~/.bin/polybar_launch.sh
-exec --no-startup-id dockx
 exec --no-startup-id ~/.bin/rclone_mount.sh
 exec --no-startup-id urxvtd -o -f
 exec --no-startup-id sleep 3; nm-applet
@@ -82,6 +81,7 @@ exec --no-startup-id sleep 3; volumeicon
 exec --no-startup-id sleep 3; clipit
 exec --no-startup-id sleep 3; fcitx5
 exec --no-startup-id sleep 3; udiskie -Nt
+exec --no-startup-id sleep 6; dockx
 exec --no-startup-id sleep 6; thunar --daemon
 exec --no-startup-id sleep 15; conky -c ~/.config/conky/archer-conky-right.conf
 exec --no-startup-id sleep 15; conky -c ~/.config/conky/archer-conky-left.conf
