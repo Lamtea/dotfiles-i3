@@ -99,7 +99,7 @@ exec --no-startup-id sleep 9; osmo
 exec --no-startup-id sleep 9; my-weather-indicator
 exec --no-startup-id sleep 12; /opt/appimages/Joplin.AppImage
 exec --no-startup-id sleep 12; slack --startup
-exec --no-startup-id sleep 12; /usr/local/bin/QNAP/QsyncClient/Qsync.sh
+exec --no-startup-id sleep 30; /usr/local/bin/QNAP/QsyncClient/Qsync.sh
 
 ################################################################################################
 ## Bindsym settings.
