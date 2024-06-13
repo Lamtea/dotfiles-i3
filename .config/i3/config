@@ -81,10 +81,10 @@ exec --no-startup-id sleep 3; volumeicon
 exec --no-startup-id sleep 3; clipit
 exec --no-startup-id sleep 3; fcitx5
 exec --no-startup-id sleep 3; udiskie -Nt
-exec --no-startup-id sleep 6; dockx
 exec --no-startup-id sleep 6; thunar --daemon
 exec --no-startup-id sleep 15; conky -c ~/.config/conky/archer-conky-right.conf
 exec --no-startup-id sleep 15; conky -c ~/.config/conky/archer-conky-left.conf
+exec --no-startup-id sleep 30; dockx
 
 # Autostart applications
 exec --no-startup-id sleep 6; xpad
@@ -99,7 +99,7 @@ exec --no-startup-id sleep 9; osmo
 exec --no-startup-id sleep 9; my-weather-indicator
 exec --no-startup-id sleep 12; /opt/appimages/Joplin.AppImage
 exec --no-startup-id sleep 12; slack --startup
-exec --no-startup-id sleep 30; /usr/local/bin/QNAP/QsyncClient/Qsync.sh
+exec --no-startup-id sleep 12; /usr/local/bin/QNAP/QsyncClient/Qsync.sh
 
 ################################################################################################
 ## Bindsym settings.
