@@ -67,19 +67,19 @@ TERM = "alacritty"
 size = 14
 
 [font.bold]
-family = "HackGen"
+family = "HackGen Console NF"
 style = "Bold"
 
 [font.bold_italic]
-family = "HackGen"
+family = "HackGen Console NF"
 style = "Bold Italic"
 
 [font.italic]
-family = "HackGen"
+family = "HackGen Console NF"
 style = "Italic"
 
 [font.normal]
-family = "HackGen"
+family = "HackGen Console NF"
 style = "Regular"
 
 [scrolling]

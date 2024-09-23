@@ -172,7 +172,6 @@ Set the tools:
   - noto-fonts-\* **(optional)** _(your locale, cjk is default)_
   - noto-fonts-emoji
   - noto-fonts-extra
-  - ttf-ricty **(optional)** _(aur, Japanese font, urxvt use it)_
   - ttf-hackgen **(optional)** _(aur, Japanese font, alacritty use it)_
   - ttf-meslo-nerd-font-powerlevel10k _(aur)_
   - fantasque-sans-mono
@@ -458,7 +457,7 @@ Set the tools:
 ## Localization
 
 - Edit font settings.
-  - `Noto * CJK JP`, `ricty`, `HackGenNerd` # change your locale.
+  - `Noto * CJK JP`, `HackGen Console NF` # change your locale.
 - Edit `.config/conky/archer-conky-left.conf`.
   - `### Datetime` section.
     - `${time %Y年%m月%d日}$` # change your locale.
