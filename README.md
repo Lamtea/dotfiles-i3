@@ -268,7 +268,7 @@ Set the tools:
 - Bluetooth manager
   - blueman
 - Clipboard manager
-  - clipit
+  - parcellite
 - Power manager
   - systemd-logind
   - thermald
