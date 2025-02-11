@@ -78,7 +78,7 @@ exec --no-startup-id urxvtd -o -f
 exec --no-startup-id sleep 3; nm-applet
 exec --no-startup-id sleep 3; blueman-applet
 exec --no-startup-id sleep 3; volumeicon
-exec --no-startup-id sleep 3; parcellite
+exec --no-startup-id sleep 3; xfce4-clipman
 exec --no-startup-id sleep 3; fcitx5
 exec --no-startup-id sleep 3; udiskie -Nt
 exec --no-startup-id sleep 6; thunar --daemon

@@ -268,7 +268,7 @@ Set the tools:
 - Bluetooth manager
   - blueman
 - Clipboard manager
-  - parcellite
+  - xfce4-clipman-plugin
 - Power manager
   - systemd-logind
   - thermald
