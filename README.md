@@ -295,15 +295,14 @@ Set the tools:
       _(aur, require dropbox account)_
     - thunar-shares-plugin
       **(optional)**
-      _(aur, depend on samba)_
-    - thunar-vcs-plugin _(aur)_
+      _(depend on samba)_
+    - thunar-vcs-plugin
     - gvfs
       - gvfs-smb
       - gvfs-mtp
       - gvfs-gphoto2
       - gvfs-afc
     - tumbler
-    - raw-thumbnailer _(aur)_
     - catfish
   - ranger _(from dotfiles)_
 - Archiver **(optional)**
@@ -357,6 +356,8 @@ Set the tools:
   - clamav
   - clamtk
 - Writer **(optional)**
+  - asunder _(aur)_
+  - brasero
   - xfburn
   - etcher-bin _(aur)_
   - rpi-imager _(aur)_
@@ -404,12 +405,13 @@ Set the tools:
   - visual-studio-code-bin _(aur)_
   - android-studio _(aur)_
   - dbeaver
-  - azuredatastudio-bin _(aur)_
   - storageexplorer _(aur)_
   - meld
   - postman-bin _(aur)_
   - wireshark-qt
   - wireshark-cli
+  - burpsuite
+  - zap
   - filezilla **(optional)**
 - Virtual machine **(optional)**
   - virt-manager
