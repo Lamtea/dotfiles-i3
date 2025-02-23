@@ -168,19 +168,15 @@ Set the tools:
 - Cursor
   - xcursor-flatbed
 - Font
+  - nerd-fonts
   - noto-fonts
   - noto-fonts-\* **(optional)** _(your locale, cjk is default)_
   - noto-fonts-emoji
   - noto-fonts-extra
-  - ttf-hackgen **(optional)** _(aur, Japanese font, alacritty use it)_
-  - ttf-meslo-nerd-font-powerlevel10k _(aur)_
-  - fantasque-sans-mono
-  - ttf-monapo **(optional)** _(aur, Japanese font, jdim use it)_
+  - ttf-hackgen **(optional)** _(aur, Japanese font)_
+  - ttf-monapo **(optional)** _(aur, Japanese font)_
+  - ttf-moralerspace _(aur, Japanese font)_
   - ttf-liberation **(optional)** _(for steam)_
-  - ttf-noto-nerd
-  - ttf-meslo-nerd
-  - ttf-hack-nerd
-  - ttf-fantasque-nerd
   - font-manager _(font viewer)_
 - Theme manager
   - Gtk
