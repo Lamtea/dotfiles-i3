@@ -175,7 +175,7 @@ Set the tools:
   - noto-fonts-extra
   - ttf-hackgen **(optional)** _(aur, Japanese font)_
   - ttf-monapo **(optional)** _(aur, Japanese font)_
-  - ttf-moralerspace _(aur, Japanese font)_
+  - ttf-moralerspace **(optional)** _(aur, Japanese font)_
   - ttf-liberation **(optional)** _(for steam)_
   - font-manager _(font viewer)_
 - Theme manager
