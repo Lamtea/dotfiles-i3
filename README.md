@@ -388,8 +388,6 @@ Set the tools:
   - my-weather-indicator-git _(aur)_
   - veracrypt
   - uget
-    - uget-integrator _(aur)_
-    - uget-integrator-firefox _(aur)_
   - xpad
   - joplin-appimage _(aur)_
   - slack-desktop _(aur)_
