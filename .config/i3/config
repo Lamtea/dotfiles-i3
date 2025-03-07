@@ -258,7 +258,7 @@ bindsym Ctrl+Print --release exec --no-startup-id flameshot screen
 bindsym $mod+Shift+Ctrl+h exec xdg-open 'https://github.com/Lamtea/dotfiles-i3/wiki/i3'
 bindsym $mod+F1 exec thunar
 bindsym $mod+Shift+F1 exec catfish
-bindsym $mod+Ctrl+F1 exec --no-startup-id $terminal_command -e 'ranger'
+bindsym $mod+Ctrl+F1 exec --no-startup-id $terminal_command -e 'y'
 bindsym $mod+F2 exec vivaldi-stable
 bindsym $mod+Shift+F2 exec brave --incognito
 bindsym $mod+Ctrl+F2 exec --no-startup-id $terminal_command -e 'w3m https://google.com'
