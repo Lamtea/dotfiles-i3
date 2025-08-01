@@ -67,19 +67,19 @@ TERM = "alacritty"
 size = 14
 
     [font.bold]
-    family = "Moralerspace Neon HWNF"
+    family = "Moralerspace Neon HW"
     style  = "Bold"
 
     [font.bold_italic]
-    family = "Moralerspace Neon HWNF"
+    family = "Moralerspace Neon HW"
     style  = "Bold Italic"
 
     [font.italic]
-    family = "Moralerspace Neon HWNF"
+    family = "Moralerspace Neon HW"
     style  = "Italic"
 
     [font.normal]
-    family = "Moralerspace Neon HWNF"
+    family = "Moralerspace Neon HW"
     style  = "Regular"
 
 [scrolling]
