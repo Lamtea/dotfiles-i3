@@ -438,11 +438,10 @@ Set the tools:
   - calibre
   - mcomix _(aur)_
   - geeqie
-  - xsane
+  - simple-scan
     **(optional)**
     _(If you haven't scanner,
-    remove a line of `exec xsane` from `.config/i3/config`)_
-    - xsane-gimp
+    remove a line of `exec simple-scan` from `.config/i3/config`)_
   - smplayer
     - smplayer-skins
     - smplayer-themes

@@ -278,7 +278,7 @@ bindsym $mod+Shift+F8 exec --no-startup-id peek
 bindsym $mod+F9 exec calibre
 bindsym $mod+Shift+F9 exec mcomix
 bindsym $mod+F10 exec geeqie
-bindsym $mod+Shift+F10 exec xsane
+bindsym $mod+Shift+F10 exec simple-scan
 bindsym $mod+F11 exec smplayer
 bindsym $mod+Shift+F11 exec vlc
 bindsym $mod+F12 exec prime-run libreoffice --calc
