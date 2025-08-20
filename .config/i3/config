@@ -95,7 +95,7 @@ exec --no-startup-id sleep 6; cantata
 exec --no-startup-id sleep 6; remmina -i
 exec --no-startup-id sleep 6; uget-gtk
 exec --no-startup-id sleep 9; redshift-gtk
-exec --no-startup-id sleep 9; osmo
+# exec --no-startup-id sleep 9; osmo
 exec --no-startup-id sleep 9; my-weather-indicator
 exec --no-startup-id sleep 12; /opt/appimages/Joplin.AppImage
 exec --no-startup-id sleep 12; slack --startup
