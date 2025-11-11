@@ -24,6 +24,8 @@ Only settings related to the 'Depend on' list are excerpted.
 | Graphic     | Intel UHD 630, NVIDIA GeForce MX150 (NVIDIA Optimus)            |
 | Network     | Realtek RTL8169 (LAN), Intel Wireless-AC 9560 (WiFi, Bluetooth) |
 | Monitor     | Laptop Built-in(eDP-1 connected), LG24UD58(HDMI-2 connected)    |
+| Mouse       | Razer Death Adder Essential                                     |
+| Keyboard    | Real Force R3S                                                  |
 | Tablet      | Wacom Intuos 4                                                  |
 | Printer     | Brother DCP-J152N                                               |
 | Scanner     | Brother DCP-J152N                                               |
@@ -325,6 +327,13 @@ Set the tools:
   - ncmpcpp
   - cantata
   - spotify _(aur)_
+- Keyboard & Mouse
+  - openrazer-daemon
+  **(optional)**
+  _(for razer devices)_
+  - polychromatic
+  **(optional)**
+  _(aur, for razer devices)_
 - Input method
   **(optional)**
   _(If you don't use it,
