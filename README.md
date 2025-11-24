@@ -408,6 +408,7 @@ Set the tools:
   - visual-studio-code-bin _(aur)_
   - android-studio _(aur)_
   - dbeaver
+  - redisinsight-bin _(aur)_
   - storageexplorer _(aur)_
   - meld
   - postman-bin _(aur)_
