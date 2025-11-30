@@ -410,6 +410,7 @@ Set the tools:
   - dbeaver
   - redisinsight-bin _(aur)_
   - storageexplorer _(aur)_
+  - github-desktop-bin _(aur)_
   - meld
   - postman-bin _(aur)_
   - wireshark-qt
