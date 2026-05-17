@@ -48,7 +48,7 @@ set $ws8 8
 #################################################################################################
 # Terminal
 #set $terminal_command alacritty
-set $terminal_command urxvtc
+set $terminal_command urxvt
 
 # Screen locker
 #set $locker_command light-locker-command -l
@@ -74,7 +74,6 @@ exec --no-startup-id compton -b
 exec --no-startup-id numlockx on
 exec_always --no-startup-id ~/.bin/polybar_launch.sh
 exec --no-startup-id ~/.bin/rclone_mount.sh
-exec --no-startup-id urxvtd -o -f
 exec --no-startup-id sleep 3; nm-applet
 exec --no-startup-id sleep 3; blueman-applet
 exec --no-startup-id sleep 3; volumeicon
